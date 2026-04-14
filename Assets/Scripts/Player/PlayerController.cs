@@ -45,22 +45,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void HandleMove(Vector2 input)
+    public void HandleMove(Vector2 input)
     {
         moveInput = input;
     }
 
-    void HandleJump()
+    public void HandleJump()
     {
         jumpPressed = true;
     }
 
-    void Move()
+    public void Move()
     {
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
     }
 
-    void Jump()
+    public void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
     }
