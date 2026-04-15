@@ -1,67 +1,160 @@
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerState))]
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(PlayerEquipment))] // Automatically ensures the equipment script is attached
 public class PlayerController : MonoBehaviour
 {
-    private PlayerState state;
-    private Rigidbody2D rb;
+    // Changed to public properties with private setters so states can access them
+    public Rigidbody2D rb { get; private set; }
+    public PlayerEquipment equipment { get; private set; }
 
-    private Vector2 moveInput;
-    private bool jumpPressed;
+    public PlayerStateMachine StateMachine { get; private set; }
 
-    [SerializeField] private InputHandler input;
+    // ===== TOP-DOWN STATES =====
+    public IdleState IdleState { get; private set; }
+    public WalkState WalkState { get; private set; }
+    public InteractState InteractState { get; private set; }
+    public CraftingState CraftingState { get; private set; }
+    public HurtState HurtState { get; private set; }
+    public DashState DashState { get; private set; } // New Dash State
 
-    [Header("Movement")]
-    public float moveSpeed = 5f;
-    public float jumpForce = 6f;
+    [Header("Movement Settings")]
+    public float moveSpeed = 6f;
 
-    void Awake()
+    [Header("Dash Settings")]
+    public float dashSpeed = 15f;
+    public float dashDuration = 0.2f;
+    public float dashCooldown = 1f;
+    public float lastDashTime { get; set; } = -100f; // Tracks when we last dashed
+
+    private void Awake()
     {
-        state = GetComponent<PlayerState>();
         rb = GetComponent<Rigidbody2D>();
+        equipment = GetComponent<PlayerEquipment>();
+
+        // Ensure zero gravity for top-down
+        rb.gravityScale = 0f;
+
+        StateMachine = new PlayerStateMachine();
+
+        IdleState = new IdleState(this, StateMachine, null);
+        WalkState = new WalkState(this, StateMachine, null);
+        InteractState = new InteractState(this, StateMachine, null);
+        CraftingState = new CraftingState(this, StateMachine, null);
+        HurtState = new HurtState(this, StateMachine, null);
+        DashState = new DashState(this, StateMachine, null); // Initialize Dash
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
-        input.OnMove += HandleMove;
-        input.OnJump += HandleJump;
+        if (InputHandler.Instance != null)
+            InputHandler.Instance.OnDash += HandleDash;
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
-        input.OnMove -= HandleMove;
-        input.OnJump -= HandleJump;
+        if (InputHandler.Instance != null)
+            InputHandler.Instance.OnDash -= HandleDash;
     }
 
-    void FixedUpdate()
+    private void Start()
     {
-        if (state.canMove)
-            Move();
+        StateMachine.Initialize(IdleState);
+    }
 
-        if (state.canJump && jumpPressed)
+    private void Update()
+    {
+        StateMachine.Update();
+    }
+
+    private void FixedUpdate()
+    {
+        HandleMovement();
+    }
+
+    // ===== MOVEMENT & DASH LOGIC =====
+
+    private void HandleMovement()
+    {
+        // 1. Block normal movement if interacting, crafting, hurt, or dashing
+        if (StateMachine.CurrentState == InteractState ||
+            StateMachine.CurrentState == CraftingState ||
+            StateMachine.CurrentState == HurtState ||
+            StateMachine.CurrentState == DashState)
         {
-            Jump();
-            jumpPressed = false;
+            // We don't want to kill velocity if we are dashing!
+            if (StateMachine.CurrentState != DashState)
+            {
+                rb.linearVelocity = Vector2.zero;
+            }
+            return;
+        }
+
+        // 2. Gating: Check if the chassis has the Leg Actuator unlocked
+        if (!equipment.canMove)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        // 3. Normal Omnidirectional Movement
+        Vector2 moveInput = InputHandler.Instance.MoveDirection;
+        rb.linearVelocity = moveInput * moveSpeed;
+
+        if (moveInput.x != 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(moveInput.x), 1, 1);
         }
     }
 
-    public void HandleMove(Vector2 input)
+    private void HandleDash()
     {
-        moveInput = input;
+        // 1. Gating: Ensure the Jump Servo / Dash Unit is unlocked
+        if (!equipment.canDash) return;
+
+        // 2. Cooldown check
+        if (Time.time < lastDashTime + dashCooldown) return;
+
+        // 3. Block dashing if stuck in a menu, interacting, or taking damage
+        if (StateMachine.CurrentState == InteractState ||
+            StateMachine.CurrentState == CraftingState ||
+            StateMachine.CurrentState == HurtState ||
+            StateMachine.CurrentState == DashState)
+            return;
+
+        // 4. Prevent dashing completely in place (must have a direction)
+        if (InputHandler.Instance.MoveDirection.sqrMagnitude < 0.01f) return;
+
+        StateMachine.ChangeState(DashState);
     }
 
-    public void HandleJump()
+    // ===== INTERACTION =====
+
+    public void TriggerInteraction(IInteractable interactableObject)
     {
-        jumpPressed = true;
+        if (interactableObject == null) return;
+        StateMachine.ChangeState(InteractState);
+        interactableObject.Interact(this);
     }
 
-    public void Move()
+    public void OpenToolbox()
     {
-        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+        StateMachine.ChangeState(CraftingState);
     }
 
-    public void Jump()
+    public void CloseToolbox()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        if (StateMachine.CurrentState == CraftingState)
+        {
+            StateMachine.ChangeState(IdleState);
+        }
+    }
+
+    public void ReleaseInteraction()
+    {
+        if (StateMachine.CurrentState == InteractState)
+        {
+            StateMachine.ChangeState(IdleState);
+        }
     }
 }

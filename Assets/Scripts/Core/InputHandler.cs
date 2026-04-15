@@ -1,32 +1,93 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System;
+using Singleton;
 
-public class InputHandler : MonoBehaviour
+public class InputHandler : SingletonPersistent<InputHandler>
 {
-    private GameInput input;
+    private PlayerInput playerInput;
+    private InputAction moveInput;
 
-    // EVENTS (this is the key)
-    public event Action<Vector2> OnMove;
-    public event Action OnJump;
+    public Vector2 MoveDirection { get; private set; }
 
-    void Awake()
+
+    public event Action OnInteract;
+    public event Action OnDash;
+    public event Action OnCraftingOpen;
+    public event Action<float> OnSwapModule;
+    public event Action OnPause;
+   
+    protected override void Awake()
     {
-        input = new GameInput();
+        base.Awake();
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
-        input.Enable();
-
-        input.Player.Move.performed += ctx => OnMove?.Invoke(ctx.ReadValue<Vector2>());
-        input.Player.Move.canceled += ctx => OnMove?.Invoke(Vector2.zero);
-
-        input.Player.Jump.performed += ctx => OnJump?.Invoke();
+        playerInput = GetComponent<PlayerInput>();
+        if (playerInput == null)
+        {
+            Debug.LogError($"[InputHandler] PlayerInput component is missing on {gameObject.name}");
+        }
     }
 
-    void OnDisable()
+    private void Start()
     {
-        input.Disable();
+        if (playerInput != null)
+        {
+            moveInput = playerInput.actions.FindAction("Move");
+            if (moveInput == null)
+            {
+                Debug.LogError($"[InputHandler] Move action is missing in the Input Action Asset!");
+            }
+        }
+    }
+
+    private void Update()
+    {
+        MoveAction();
+    }
+
+    private void MoveAction()
+    {
+        if (moveInput != null)
+        {
+            // Normalized prevents the player from moving faster diagonally
+            MoveDirection = moveInput.ReadValue<Vector2>().normalized;
+        }
+    }
+
+    // Connect these methods to your Unity Events on the PlayerInput component in the Inspector
+    public void InteractAction(InputAction.CallbackContext context)
+    {
+        if (context.performed) OnInteract?.Invoke();
+    }
+
+    public void CraftingAction(InputAction.CallbackContext context)
+    {
+        if (context.performed) OnCraftingOpen?.Invoke();
+    }
+
+    public void SwapModuleAction(InputAction.CallbackContext context)
+    {
+        if (context.performed) OnSwapModule?.Invoke(context.ReadValue<float>());
+    }
+
+    public void DashAction(InputAction.CallbackContext context)
+    {
+        if (context.performed) OnDash?.Invoke();
+    }
+
+    public void PauseAction(InputAction.CallbackContext context)
+    {
+        if (context.performed) OnPause?.Invoke();
+    }
+
+    public void SwitchActionMap(string actionMapName)
+    {
+        if (playerInput != null)
+        {
+            playerInput.SwitchCurrentActionMap(actionMapName);
+        }
     }
 }

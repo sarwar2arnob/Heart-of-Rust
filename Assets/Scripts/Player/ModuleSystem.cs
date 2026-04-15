@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class ModuleSystem : MonoBehaviour
 {
-    private PlayerState state;
+    private PlayerEquipment equipment; // Changed from PlayerState
 
     void Awake()
     {
-        state = GetComponent<PlayerState>();
+        // Changed to find the new PlayerEquipment component
+        equipment = GetComponent<PlayerEquipment>();
     }
 
     public bool HasModule(ModuleType type)
     {
-        return state.equippedModule != null &&
-               state.equippedModule.type == type;
+        // Assuming your ModuleData has a 'type' property defined somewhere
+        return equipment.equippedModule != null &&
+               equipment.equippedModule.type == type;
     }
 }

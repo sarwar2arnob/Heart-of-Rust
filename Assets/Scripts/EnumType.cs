@@ -16,7 +16,7 @@ public enum PartType
 
 public enum MaterialType
 {
-    LegActuator,
-    JumpServo,
-    ManipulatorArm
+    ScrapMetal,
+    Wire,
+    CoreFragment
 }

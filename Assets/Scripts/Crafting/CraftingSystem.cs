@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.LowLevelPhysics2D.PhysicsQuery;
 
 public class CraftingSystem : MonoBehaviour
 {
@@ -36,15 +35,23 @@ public class CraftingSystem : MonoBehaviour
 
     void ApplyResult(CraftResult result)
     {
-        var player = FindObjectOfType<PlayerState>();
+        // Find the PlayerEquipment component instead of PlayerState
+        var playerEquipment = Object.FindFirstObjectByType<PlayerEquipment>();
 
-        if (result.type == ResultType.Module)
+        if (playerEquipment != null)
         {
-            player.EquipModule(result.module);
+            if (result.type == ResultType.Module)
+            {
+                playerEquipment.EquipModule(result.module);
+            }
+            else if (result.type == ResultType.Part)
+            {
+                playerEquipment.UnlockPart(result.part);
+            }
         }
-        else if (result.type == ResultType.Part)
+        else
         {
-            player.UnlockPart(result.part);
+            Debug.LogError("PlayerEquipment not found in the scene!");
         }
     }
 }
