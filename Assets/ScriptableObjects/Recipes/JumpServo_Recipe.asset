@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2615fe787cc3e4140bfec40cb10bde3b, type: 3}
+  m_Name: JumpServo_Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  inputs:
+  - item: {fileID: 11400000, guid: 71b7e2803f8692c4aba31182bd351df9, type: 2}
+    amount: 2
+  - item: {fileID: 11400000, guid: b0fe981c62c460342a08cef90c3dd9d8, type: 2}
+    amount: 3
+  result:
+    type: 1
+    module: {fileID: 0}
+    part: 1

@@ -1,9 +1,14 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CraftingSystem : MonoBehaviour
 {
+    [Header("Database")]
     public List<RecipeData> recipes;
+
+    // The Observable event that other systems (like UI or Player) can listen to
+    public event Action<CraftResult> OnCraftSuccess;
 
     public bool TryCraft(List<ItemAmount> input, InventorySystem inventory)
     {
@@ -12,46 +17,44 @@ public class CraftingSystem : MonoBehaviour
             if (Match(recipe, input))
             {
                 Consume(recipe, inventory);
-                ApplyResult(recipe.result);
+                OnCraftSuccess?.Invoke(recipe.result);
                 return true;
             }
         }
 
-        Debug.Log("Craft Failed");
+        Debug.Log("Craft Failed: No matching recipe found or insufficient quantities.");
         return false;
     }
 
-    bool Match(RecipeData recipe, List<ItemAmount> input)
+    private bool Match(RecipeData recipe, List<ItemAmount> input)
     {
-        // Compare items + amounts
-        return true; // implement properly
+        // 1. If the number of distinct item slots doesn't match, it's not this recipe
+        if (recipe.inputs.Count != input.Count) return false;
+
+        // 2. Verify every required item and its exact amount exists in the input list
+        foreach (var recipeItem in recipe.inputs)
+        {
+            bool foundMatch = false;
+            foreach (var inputItem in input)
+            {
+                if (recipeItem.item == inputItem.item && recipeItem.amount == inputItem.amount)
+                {
+                    foundMatch = true;
+                    break;
+                }
+            }
+
+            if (!foundMatch) return false;
+        }
+
+        return true;
     }
 
-    void Consume(RecipeData recipe, InventorySystem inventory)
+    private void Consume(RecipeData recipe, InventorySystem inventory)
     {
         foreach (var item in recipe.inputs)
+        {
             inventory.Remove(item.item, item.amount);
-    }
-
-    void ApplyResult(CraftResult result)
-    {
-        // Find the PlayerEquipment component instead of PlayerState
-        var playerEquipment = Object.FindFirstObjectByType<PlayerEquipment>();
-
-        if (playerEquipment != null)
-        {
-            if (result.type == ResultType.Module)
-            {
-                playerEquipment.EquipModule(result.module);
-            }
-            else if (result.type == ResultType.Part)
-            {
-                playerEquipment.UnlockPart(result.part);
-            }
-        }
-        else
-        {
-            Debug.LogError("PlayerEquipment not found in the scene!");
         }
     }
 }
