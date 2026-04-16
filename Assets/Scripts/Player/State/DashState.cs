@@ -5,12 +5,12 @@ public class DashState : PlayerState
     private float dashStartTime;
     private Vector2 dashDirection;
 
-    public DashState(PlayerController player, PlayerStateMachine stateMachine, object anim) : base(player, stateMachine, anim) { }
+    public DashState(PlayerController player, PlayerStateMachine stateMachine, PlayerAnimationManager animManager)
+        : base(player, stateMachine, animManager) { }
 
     public override void Enter()
     {
         base.Enter();
-
         dashStartTime = Time.time;
 
         // Lock in the direction the player was holding when they pressed Dash
@@ -19,7 +19,8 @@ public class DashState : PlayerState
         // Apply the immediate burst of speed
         player.rb.linearVelocity = dashDirection * player.dashSpeed;
 
-        // Optional: Trigger a particle effect or animation here
+        // Trigger the visual dash animation
+        animManager.TriggerDash();
     }
 
     public override void LogicUpdate()

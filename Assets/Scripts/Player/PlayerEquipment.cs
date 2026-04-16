@@ -4,9 +4,9 @@ using UnityEngine;
 public class PlayerEquipment : MonoBehaviour
 {
     [Header("Permanent Parts")]
-    public bool canMove { get; private set; }
-    public bool canDash { get; private set; }
-    public bool canInteract { get; private set; }
+    public bool canMove;
+    public bool canDash;
+    public bool canInteract;
 
     [Header("Swappable Modules")]
     public ModuleData equippedModule { get; private set; }

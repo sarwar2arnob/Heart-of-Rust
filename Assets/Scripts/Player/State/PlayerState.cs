@@ -2,24 +2,17 @@ public abstract class PlayerState
 {
     protected PlayerController player;
     protected PlayerStateMachine stateMachine;
+    protected PlayerAnimationManager animManager; // <-- Updated type
 
-    // We pass 'object anim' temporarily to match the 'null' we used in PlayerController.
-    // Once you build your PlayerAnimationManager, you can change 'object' to 'PlayerAnimationManager'.
-    public PlayerState(PlayerController player, PlayerStateMachine stateMachine, object anim)
+    public PlayerState(PlayerController player, PlayerStateMachine stateMachine, PlayerAnimationManager animManager)
     {
         this.player = player;
         this.stateMachine = stateMachine;
+        this.animManager = animManager; // <-- Assign it
     }
 
-    // Called once when entering the state
     public virtual void Enter() { }
-
-    // Called every frame in Update()
     public virtual void LogicUpdate() { }
-
-    // Called every physics frame in FixedUpdate() (if needed)
     public virtual void PhysicsUpdate() { }
-
-    // Called once when exiting the state
     public virtual void Exit() { }
 }

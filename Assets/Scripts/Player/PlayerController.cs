@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(PlayerAnimationManager))] // Add this to your requirements
 [RequireComponent(typeof(PlayerEquipment))] // Automatically ensures the equipment script is attached
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     public PlayerEquipment equipment { get; private set; }
 
+    // Inside PlayerController class:
+    public PlayerAnimationManager AnimManager { get; private set; }
     public PlayerStateMachine StateMachine { get; private set; }
 
     // ===== TOP-DOWN STATES =====
@@ -31,18 +34,18 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         equipment = GetComponent<PlayerEquipment>();
+        AnimManager = GetComponent<PlayerAnimationManager>(); // Cache it
 
-        // Ensure zero gravity for top-down
         rb.gravityScale = 0f;
-
         StateMachine = new PlayerStateMachine();
 
-        IdleState = new IdleState(this, StateMachine, null);
-        WalkState = new WalkState(this, StateMachine, null);
-        InteractState = new InteractState(this, StateMachine, null);
-        CraftingState = new CraftingState(this, StateMachine, null);
-        HurtState = new HurtState(this, StateMachine, null);
-        DashState = new DashState(this, StateMachine, null); // Initialize Dash
+        // Pass AnimManager into every state!
+        IdleState = new IdleState(this, StateMachine, AnimManager);
+        WalkState = new WalkState(this, StateMachine, AnimManager);
+        InteractState = new InteractState(this, StateMachine, AnimManager);
+        CraftingState = new CraftingState(this, StateMachine, AnimManager);
+        HurtState = new HurtState(this, StateMachine, AnimManager);
+        DashState = new DashState(this, StateMachine, AnimManager);
     }
 
     private void OnEnable()
@@ -76,7 +79,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
-        // 1. Block normal movement if interacting, crafting, hurt, or dashing
+        //1.Block normal movement if interacting, crafting, hurt, or dashing
         //if (StateMachine.CurrentState == InteractState ||
         //    StateMachine.CurrentState == CraftingState ||
         //    StateMachine.CurrentState == HurtState ||
@@ -97,7 +100,7 @@ public class PlayerController : MonoBehaviour
         //    return;
         //}
 
-        // 3. Normal Omnidirectional Movement
+        //3.Normal Omnidirectional Movement
         Vector2 moveInput = InputHandler.Instance.MoveDirection;
         rb.linearVelocity = moveInput * moveSpeed;
 
@@ -110,7 +113,7 @@ public class PlayerController : MonoBehaviour
     private void HandleDash()
     {
         // 1. Gating: Ensure the Jump Servo / Dash Unit is unlocked
-        //if (!equipment.canDash) return;
+        if (!equipment.canDash) return;
 
         // 2. Cooldown check
         if (Time.time < lastDashTime + dashCooldown) return;

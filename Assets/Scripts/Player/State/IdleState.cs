@@ -1,12 +1,15 @@
 public class IdleState : PlayerState
 {
-    public IdleState(PlayerController player, PlayerStateMachine stateMachine, object anim) : base(player, stateMachine, anim) { }
+    // Change 'object anim' to 'PlayerAnimationManager animManager'
+    public IdleState(PlayerController player, PlayerStateMachine stateMachine, PlayerAnimationManager animManager)
+        : base(player, stateMachine, animManager) { }
 
     public override void LogicUpdate()
     {
         base.LogicUpdate();
 
-        // If the player presses a directional key, switch to WalkState
+        animManager.UpdateMovementAnimation(InputHandler.Instance.MoveDirection);
+
         if (InputHandler.Instance.MoveDirection.sqrMagnitude > 0.01f)
         {
             stateMachine.ChangeState(player.WalkState);
