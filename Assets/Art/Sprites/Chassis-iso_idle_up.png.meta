@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 558a107254251794a90bbf2972b65e37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2519253471875261411
+    second: Chassis-iso_idle_up_0
+  - first:
+      213: 8589621017906988609
+    second: Chassis-iso_idle_up_1
+  - first:
+      213: 8329369154943243390
+    second: Chassis-iso_idle_up_2
+  - first:
+      213: 179082416132800156
+    second: Chassis-iso_idle_up_3
+  - first:
+      213: 3645605526971993996
+    second: Chassis-iso_idle_up_4
+  - first:
+      213: 4071690728369120076
+    second: Chassis-iso_idle_up_5
+  - first:
+      213: 3306279301502618786
+    second: Chassis-iso_idle_up_6
+  - first:
+      213: -634153615671065989
+    second: Chassis-iso_idle_up_7
+  - first:
+      213: 530261422150802432
+    second: Chassis-iso_idle_up_8
+  - first:
+      213: 5764286863832020813
+    second: Chassis-iso_idle_up_9
+  - first:
+      213: 7901141326392171522
+    second: Chassis-iso_idle_up_10
+  - first:
+      213: -6834445686374745798
+    second: Chassis-iso_idle_up_11
+  - first:
+      213: -3534172388949479674
+    second: Chassis-iso_idle_up_12
+  - first:
+      213: 9017405200963627911
+    second: Chassis-iso_idle_up_13
+  - first:
+      213: -5934036779410882595
+    second: Chassis-iso_idle_up_14
+  - first:
+      213: -8253718295071740442
+    second: Chassis-iso_idle_up_15
+  - first:
+      213: -301658690839108674
+    second: Chassis-iso_idle_up_16
+  - first:
+      213: -6696326077658667641
+    second: Chassis-iso_idle_up_17
+  - first:
+      213: -2255847422113200276
+    second: Chassis-iso_idle_up_18
+  - first:
+      213: 628003675894637258
+    second: Chassis-iso_idle_up_19
+  - first:
+      213: -8475434682096330083
+    second: Chassis-iso_idle_up_20
+  - first:
+      213: 7728136113515504937
+    second: Chassis-iso_idle_up_21
+  - first:
+      213: 3970159646440460697
+    second: Chassis-iso_idle_up_22
+  - first:
+      213: -8705719631913366580
+    second: Chassis-iso_idle_up_23
+  - first:
+      213: -5890150207847099143
+    second: Chassis-iso_idle_up_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1063
+        width: 66
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c94bd9050d90dd0800000000000000
+      internalID: -2519253471875261411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1062
+        width: 66
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14643975ec6743770800000000000000
+      internalID: 8589621017906988609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1062
+        width: 67
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74dc739d1dd79370800000000000000
+      internalID: 8329369154943243390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_3
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1061
+        width: 68
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e3d17328a3c7200800000000000000
+      internalID: 179082416132800156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_4
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1060
+        width: 68
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fcd5a59eac79230800000000000000
+      internalID: 3645605526971993996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 804
+        width: 68
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4361bb052d818830800000000000000
+      internalID: 4071690728369120076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_6
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 805
+        width: 68
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac4a4ed18342ed20800000000000000
+      internalID: 3306279301502618786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_7
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 805
+        width: 68
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7285ec75a80337f0800000000000000
+      internalID: -634153615671065989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_8
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 806
+        width: 69
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c546934fddb5700800000000000000
+      internalID: 530261422150802432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_9
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 806
+        width: 69
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d477826bc5cdeff40800000000000000
+      internalID: 5764286863832020813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_10
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 550
+        width: 68
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c93cf9c2e76ad60800000000000000
+      internalID: 7901141326392171522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_11
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 550
+        width: 67
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39bee2dbdb2721a0800000000000000
+      internalID: -6834445686374745798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_12
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 550
+        width: 66
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f2ca5efe814fec0800000000000000
+      internalID: -3534172388949479674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_13
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 550
+        width: 66
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b62370142442d70800000000000000
+      internalID: 9017405200963627911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_14
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 550
+        width: 65
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf7c1f2df016ada0800000000000000
+      internalID: -5934036779410882595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 294
+        width: 65
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed2b12d0f6e47d80800000000000000
+      internalID: -8253718295071740442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_16
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 294
+        width: 65
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb32029d40b40dbf0800000000000000
+      internalID: -301658690839108674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_17
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 294
+        width: 65
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78568f839eed113a0800000000000000
+      internalID: -6696326077658667641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_18
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 294
+        width: 65
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c674679b8be91b0e0800000000000000
+      internalID: -2255847422113200276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_19
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 294
+        width: 64
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2e653140e17b800800000000000000
+      internalID: 628003675894637258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_20
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 38
+        width: 64
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a5f98bf05316a80800000000000000
+      internalID: -8475434682096330083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 38
+        width: 65
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925a5fd89dadf3b60800000000000000
+      internalID: 7728136113515504937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_22
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 37
+        width: 66
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9919ca3e927d81730800000000000000
+      internalID: 3970159646440460697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_23
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 37
+        width: 66
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbc8a1ae121f2780800000000000000
+      internalID: -8705719631913366580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_idle_up_24
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 35
+        width: 67
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f49493e79bf14ea0800000000000000
+      internalID: -5890150207847099143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chassis-iso_idle_up_0: -2519253471875261411
+      Chassis-iso_idle_up_1: 8589621017906988609
+      Chassis-iso_idle_up_10: 7901141326392171522
+      Chassis-iso_idle_up_11: -6834445686374745798
+      Chassis-iso_idle_up_12: -3534172388949479674
+      Chassis-iso_idle_up_13: 9017405200963627911
+      Chassis-iso_idle_up_14: -5934036779410882595
+      Chassis-iso_idle_up_15: -8253718295071740442
+      Chassis-iso_idle_up_16: -301658690839108674
+      Chassis-iso_idle_up_17: -6696326077658667641
+      Chassis-iso_idle_up_18: -2255847422113200276
+      Chassis-iso_idle_up_19: 628003675894637258
+      Chassis-iso_idle_up_2: 8329369154943243390
+      Chassis-iso_idle_up_20: -8475434682096330083
+      Chassis-iso_idle_up_21: 7728136113515504937
+      Chassis-iso_idle_up_22: 3970159646440460697
+      Chassis-iso_idle_up_23: -8705719631913366580
+      Chassis-iso_idle_up_24: -5890150207847099143
+      Chassis-iso_idle_up_3: 179082416132800156
+      Chassis-iso_idle_up_4: 3645605526971993996
+      Chassis-iso_idle_up_5: 4071690728369120076
+      Chassis-iso_idle_up_6: 3306279301502618786
+      Chassis-iso_idle_up_7: -634153615671065989
+      Chassis-iso_idle_up_8: 530261422150802432
+      Chassis-iso_idle_up_9: 5764286863832020813
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

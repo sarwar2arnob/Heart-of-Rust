@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: b6f45a3a195cea34eb6c11d3349ba4e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3121519624807530301
+    second: Chassis-iso_walk_down_0
+  - first:
+      213: -1531337637049513020
+    second: Chassis-iso_walk_down_1
+  - first:
+      213: -1722717701812210191
+    second: Chassis-iso_walk_down_2
+  - first:
+      213: 8515181987603484760
+    second: Chassis-iso_walk_down_3
+  - first:
+      213: 4057803830456108549
+    second: Chassis-iso_walk_down_4
+  - first:
+      213: -8974683151212647493
+    second: Chassis-iso_walk_down_5
+  - first:
+      213: 950887802409403159
+    second: Chassis-iso_walk_down_6
+  - first:
+      213: 4239062633196487114
+    second: Chassis-iso_walk_down_7
+  - first:
+      213: -3566261974843874145
+    second: Chassis-iso_walk_down_8
+  - first:
+      213: -2163281758942848446
+    second: Chassis-iso_walk_down_9
+  - first:
+      213: 6684917563657933184
+    second: Chassis-iso_walk_down_10
+  - first:
+      213: -4825826714504929842
+    second: Chassis-iso_walk_down_11
+  - first:
+      213: 5814851214821244699
+    second: Chassis-iso_walk_down_12
+  - first:
+      213: 1132497230884565452
+    second: Chassis-iso_walk_down_13
+  - first:
+      213: 1778927599383249481
+    second: Chassis-iso_walk_down_14
+  - first:
+      213: 3651132492184361709
+    second: Chassis-iso_walk_down_15
+  - first:
+      213: -5407053837883441798
+    second: Chassis-iso_walk_down_16
+  - first:
+      213: -2459159392935276437
+    second: Chassis-iso_walk_down_17
+  - first:
+      213: -8184229942251254027
+    second: Chassis-iso_walk_down_18
+  - first:
+      213: 4560580069948979814
+    second: Chassis-iso_walk_down_19
+  - first:
+      213: -7331578745370624270
+    second: Chassis-iso_walk_down_20
+  - first:
+      213: 6692395148735074627
+    second: Chassis-iso_walk_down_21
+  - first:
+      213: 2846239342619029029
+    second: Chassis-iso_walk_down_22
+  - first:
+      213: -3561538068206740535
+    second: Chassis-iso_walk_down_23
+  - first:
+      213: -5063637041546633244
+    second: Chassis-iso_walk_down_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1060
+        width: 69
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f301c6f8dd15b20800000000000000
+      internalID: 3121519624807530301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1059
+        width: 70
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb4a7058889fbae0800000000000000
+      internalID: -1531337637049513020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_2
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1062
+        width: 70
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5b437a06da718e0800000000000000
+      internalID: -1722717701812210191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_3
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1069
+        width: 66
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85019e007e00c2670800000000000000
+      internalID: 8515181987603484760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_4
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1072
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5064e8aa517305830800000000000000
+      internalID: 4057803830456108549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 807
+        width: 63
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb69405935837380800000000000000
+      internalID: -8974683151212647493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_6
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 799
+        width: 63
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7134dd31b6b323d00800000000000000
+      internalID: 950887802409403159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_7
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 800
+        width: 63
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac10f40610d24da30800000000000000
+      internalID: 4239062633196487114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_8
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 804
+        width: 68
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94a275f0a7128ec0800000000000000
+      internalID: -3566261974843874145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_9
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 809
+        width: 70
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a1129a3ba7af1e0800000000000000
+      internalID: -2163281758942848446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 556
+        width: 73
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081d99e1b1995cc50800000000000000
+      internalID: 6684917563657933184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_11
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 545
+        width: 74
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecdd756eb28370db0800000000000000
+      internalID: -4825826714504929842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_12
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 538
+        width: 75
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f3b291f5082b050800000000000000
+      internalID: 5814851214821244699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_13
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 536
+        width: 75
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1fcf33b3077bf00800000000000000
+      internalID: 1132497230884565452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_14
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 541
+        width: 76
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942806af93500b810800000000000000
+      internalID: 1778927599383249481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 293
+        width: 73
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea198838ad6ba230800000000000000
+      internalID: 3651132492184361709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_16
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 295
+        width: 70
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d7b87ae2946f4b0800000000000000
+      internalID: -5407053837883441798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_17
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 283
+        width: 69
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b601702bf8f4fddd0800000000000000
+      internalID: -2459159392935276437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_18
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 276
+        width: 70
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe8ffbba36cb6e80800000000000000
+      internalID: -8184229942251254027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_19
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 276
+        width: 70
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66af80f196f6a4f30800000000000000
+      internalID: 4560580069948979814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_20
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 25
+        width: 75
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe3167b9fff04a90800000000000000
+      internalID: -7331578745370624270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_21
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 32
+        width: 79
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341d6e01ee920ec50800000000000000
+      internalID: 6692395148735074627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_22
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 29
+        width: 82
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e6c822a9fdf7720800000000000000
+      internalID: 2846239342619029029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_23
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 14
+        width: 83
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb918e2fffd29ec0800000000000000
+      internalID: -3561538068206740535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis-iso_walk_down_24
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 8
+        width: 84
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef5a1360f85ab9b0800000000000000
+      internalID: -5063637041546633244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chassis-iso_walk_down_0: 3121519624807530301
+      Chassis-iso_walk_down_1: -1531337637049513020
+      Chassis-iso_walk_down_10: 6684917563657933184
+      Chassis-iso_walk_down_11: -4825826714504929842
+      Chassis-iso_walk_down_12: 5814851214821244699
+      Chassis-iso_walk_down_13: 1132497230884565452
+      Chassis-iso_walk_down_14: 1778927599383249481
+      Chassis-iso_walk_down_15: 3651132492184361709
+      Chassis-iso_walk_down_16: -5407053837883441798
+      Chassis-iso_walk_down_17: -2459159392935276437
+      Chassis-iso_walk_down_18: -8184229942251254027
+      Chassis-iso_walk_down_19: 4560580069948979814
+      Chassis-iso_walk_down_2: -1722717701812210191
+      Chassis-iso_walk_down_20: -7331578745370624270
+      Chassis-iso_walk_down_21: 6692395148735074627
+      Chassis-iso_walk_down_22: 2846239342619029029
+      Chassis-iso_walk_down_23: -3561538068206740535
+      Chassis-iso_walk_down_24: -5063637041546633244
+      Chassis-iso_walk_down_3: 8515181987603484760
+      Chassis-iso_walk_down_4: 4057803830456108549
+      Chassis-iso_walk_down_5: -8974683151212647493
+      Chassis-iso_walk_down_6: 950887802409403159
+      Chassis-iso_walk_down_7: 4239062633196487114
+      Chassis-iso_walk_down_8: -3566261974843874145
+      Chassis-iso_walk_down_9: -2163281758942848446
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

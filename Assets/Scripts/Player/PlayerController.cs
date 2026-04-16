@@ -77,25 +77,25 @@ public class PlayerController : MonoBehaviour
     private void HandleMovement()
     {
         // 1. Block normal movement if interacting, crafting, hurt, or dashing
-        if (StateMachine.CurrentState == InteractState ||
-            StateMachine.CurrentState == CraftingState ||
-            StateMachine.CurrentState == HurtState ||
-            StateMachine.CurrentState == DashState)
-        {
-            // We don't want to kill velocity if we are dashing!
-            if (StateMachine.CurrentState != DashState)
-            {
-                rb.linearVelocity = Vector2.zero;
-            }
-            return;
-        }
+        //if (StateMachine.CurrentState == InteractState ||
+        //    StateMachine.CurrentState == CraftingState ||
+        //    StateMachine.CurrentState == HurtState ||
+        //    StateMachine.CurrentState == DashState)
+        //{
+        //    // We don't want to kill velocity if we are dashing!
+        //    if (StateMachine.CurrentState != DashState)
+        //    {
+        //        rb.linearVelocity = Vector2.zero;
+        //    }
+        //    return;
+        //}
 
-        // 2. Gating: Check if the chassis has the Leg Actuator unlocked
-        if (!equipment.canMove)
-        {
-            rb.linearVelocity = Vector2.zero;
-            return;
-        }
+        //// 2. Gating: Check if the chassis has the Leg Actuator unlocked
+        //if (!equipment.canMove)
+        //{
+        //    rb.linearVelocity = Vector2.zero;
+        //    return;
+        //}
 
         // 3. Normal Omnidirectional Movement
         Vector2 moveInput = InputHandler.Instance.MoveDirection;
@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
     private void HandleDash()
     {
         // 1. Gating: Ensure the Jump Servo / Dash Unit is unlocked
-        if (!equipment.canDash) return;
+        //if (!equipment.canDash) return;
 
         // 2. Cooldown check
         if (Time.time < lastDashTime + dashCooldown) return;
