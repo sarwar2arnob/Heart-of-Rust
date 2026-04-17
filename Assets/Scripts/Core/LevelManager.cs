@@ -9,8 +9,12 @@ public class LevelManager : MonoBehaviour
         FindObjectOfType<ClueManager>().ShowClue(clueText);
     }
 
-    public void CompleteLevel()
+    public void CompleteLevel(int nextLevelBuildIndex)
     {
-        // load next scene
+        // Unlock the next level in the save file
+        SaveManager.Instance.UnlockLevel(nextLevelBuildIndex);
+
+        // Tell GameManager to load it
+        GameManager.Instance.LoadScene(nextLevelBuildIndex);
     }
 }

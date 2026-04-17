@@ -81,6 +81,7 @@ public class InputHandler : SingletonPersistent<InputHandler>
     public void PauseAction(InputAction.CallbackContext context)
     {
         if (context.performed) OnPause?.Invoke();
+        Debug.Log("Pause action performed");
     }
 
     public void SwitchActionMap(string actionMapName)

@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class PlayerEquipment : MonoBehaviour
 {
+    [Header("Debug / Testing")]
+    public bool unlockAllOnStart = true; // Uncheck this later when building the real game!
+
     [Header("Permanent Parts")]
     public bool canMove;
     public bool canDash;
@@ -14,23 +17,31 @@ public class PlayerEquipment : MonoBehaviour
     private List<ModuleData> unlockedModules = new List<ModuleData>();
     private int currentModuleIndex = -1;
 
+    private void Start()
+    {
+        // TEMPORARY TESTING LOGIC
+        if (unlockAllOnStart)
+        {
+            canMove = true;
+            canDash = true;
+            canInteract = true;
+            Debug.LogWarning("[DEBUG] All chassis abilities temporarily unlocked for testing!");
+        }
+    }
+
     private void OnEnable()
     {
-        // Subscribe to the input event for swapping modules
         if (InputHandler.Instance != null)
             InputHandler.Instance.OnSwapModule += CycleModule;
     }
 
     private void OnDisable()
     {
-        // Always unsubscribe to prevent memory leaks
         if (InputHandler.Instance != null)
             InputHandler.Instance.OnSwapModule -= CycleModule;
     }
 
     // --- Progression Integration ---
-
-    // Call this method from whatever script listens to CraftingSystem.OnCraftSuccess
     public void ApplyCraftResult(CraftResult result)
     {
         if (result.type == ResultType.Part)
@@ -65,7 +76,6 @@ public class PlayerEquipment : MonoBehaviour
             unlockedModules.Add(newModule);
             Debug.Log($"Module Unlocked: {newModule.type}");
 
-            // Auto-equip if it's the first module we've built
             if (equippedModule == null)
             {
                 EquipModule(newModule);
@@ -84,12 +94,10 @@ public class PlayerEquipment : MonoBehaviour
     {
         if (unlockedModules.Count <= 1) return;
 
-        // Cycle right
         if (direction > 0)
         {
             currentModuleIndex = (currentModuleIndex + 1) % unlockedModules.Count;
         }
-        // Cycle left
         else if (direction < 0)
         {
             currentModuleIndex--;

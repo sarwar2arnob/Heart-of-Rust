@@ -1,15 +1,13 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(PlayerAnimationManager))] // Add this to your requirements
-[RequireComponent(typeof(PlayerEquipment))] // Automatically ensures the equipment script is attached
+[RequireComponent(typeof(PlayerAnimationManager))]
+[RequireComponent(typeof(PlayerEquipment))]
 public class PlayerController : MonoBehaviour
 {
-    // Changed to public properties with private setters so states can access them
+    // ===== CORE COMPONENTS =====
     public Rigidbody2D rb { get; private set; }
     public PlayerEquipment equipment { get; private set; }
-
-    // Inside PlayerController class:
     public PlayerAnimationManager AnimManager { get; private set; }
     public PlayerStateMachine StateMachine { get; private set; }
 
@@ -19,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public InteractState InteractState { get; private set; }
     public CraftingState CraftingState { get; private set; }
     public HurtState HurtState { get; private set; }
-    public DashState DashState { get; private set; } // New Dash State
+    public DashState DashState { get; private set; }
 
     [Header("Movement Settings")]
     public float moveSpeed = 6f;
@@ -28,18 +26,21 @@ public class PlayerController : MonoBehaviour
     public float dashSpeed = 15f;
     public float dashDuration = 0.2f;
     public float dashCooldown = 1f;
-    public float lastDashTime { get; set; } = -100f; // Tracks when we last dashed
+    public float lastDashTime { get; set; } = -100f;
+
+    [Header("Interaction Settings")]
+    public float interactionRadius = 1.5f;
+    public LayerMask interactableLayer;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         equipment = GetComponent<PlayerEquipment>();
-        AnimManager = GetComponent<PlayerAnimationManager>(); // Cache it
+        AnimManager = GetComponent<PlayerAnimationManager>();
 
         rb.gravityScale = 0f;
         StateMachine = new PlayerStateMachine();
 
-        // Pass AnimManager into every state!
         IdleState = new IdleState(this, StateMachine, AnimManager);
         WalkState = new WalkState(this, StateMachine, AnimManager);
         InteractState = new InteractState(this, StateMachine, AnimManager);
@@ -51,13 +52,19 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         if (InputHandler.Instance != null)
+        {
             InputHandler.Instance.OnDash += HandleDash;
+            InputHandler.Instance.OnInteract += HandleInteract;
+        }
     }
 
     private void OnDisable()
     {
         if (InputHandler.Instance != null)
+        {
             InputHandler.Instance.OnDash -= HandleDash;
+            InputHandler.Instance.OnInteract -= HandleInteract;
+        }
     }
 
     private void Start()
@@ -75,35 +82,36 @@ public class PlayerController : MonoBehaviour
         HandleMovement();
     }
 
-    // ===== MOVEMENT & DASH LOGIC =====
-
+    // ===== MOVEMENT LOGIC =====
     private void HandleMovement()
     {
-        //1.Block normal movement if interacting, crafting, hurt, or dashing
-        //if (StateMachine.CurrentState == InteractState ||
-        //    StateMachine.CurrentState == CraftingState ||
-        //    StateMachine.CurrentState == HurtState ||
-        //    StateMachine.CurrentState == DashState)
-        //{
-        //    // We don't want to kill velocity if we are dashing!
-        //    if (StateMachine.CurrentState != DashState)
-        //    {
-        //        rb.linearVelocity = Vector2.zero;
-        //    }
-        //    return;
-        //}
+        // 1. Block normal movement if interacting, crafting, hurt, or dashing
+        if (StateMachine.CurrentState == InteractState ||
+            StateMachine.CurrentState == CraftingState ||
+            StateMachine.CurrentState == HurtState ||
+            StateMachine.CurrentState == DashState)
+        {
+            // We don't want to kill velocity if we are mid-dash
+            if (StateMachine.CurrentState != DashState)
+            {
+                rb.linearVelocity = Vector2.zero;
+            }
+            return;
+        }
 
-        //// 2. Gating: Check if the chassis has the Leg Actuator unlocked
-        //if (!equipment.canMove)
-        //{
-        //    rb.linearVelocity = Vector2.zero;
-        //    return;
-        //}
+        // 2. Gating: Check if the chassis has the Leg Actuator unlocked
+        if (!equipment.canMove)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
 
-        //3.Normal Omnidirectional Movement
+        // 3. Normal Omnidirectional Movement
         Vector2 moveInput = InputHandler.Instance.MoveDirection;
         rb.linearVelocity = moveInput * moveSpeed;
 
+        // 4. RESTORED: Flip the sprite when moving left/right
+        // (Make sure your Blend Tree uses the Right-facing clip for both the Left and Right nodes!)
         if (moveInput.x != 0)
         {
             transform.localScale = new Vector3(Mathf.Sign(moveInput.x), 1, 1);
@@ -112,52 +120,53 @@ public class PlayerController : MonoBehaviour
 
     private void HandleDash()
     {
-        // 1. Gating: Ensure the Jump Servo / Dash Unit is unlocked
+        // Gating & State Checks
         if (!equipment.canDash) return;
-
-        // 2. Cooldown check
         if (Time.time < lastDashTime + dashCooldown) return;
 
-        // 3. Block dashing if stuck in a menu, interacting, or taking damage
         if (StateMachine.CurrentState == InteractState ||
             StateMachine.CurrentState == CraftingState ||
             StateMachine.CurrentState == HurtState ||
             StateMachine.CurrentState == DashState)
             return;
 
-        // 4. Prevent dashing completely in place (must have a direction)
+        // Prevent dashing in place
         if (InputHandler.Instance.MoveDirection.sqrMagnitude < 0.01f) return;
 
         StateMachine.ChangeState(DashState);
     }
 
-    // ===== INTERACTION =====
-
-    public void TriggerInteraction(IInteractable interactableObject)
+    // ===== SINGLE INTERACTION FLOW =====
+    public void HandleInteract()
     {
-        if (interactableObject == null) return;
-        StateMachine.ChangeState(InteractState);
-        interactableObject.Interact(this);
-    }
-
-    public void OpenToolbox()
-    {
-        StateMachine.ChangeState(CraftingState);
-    }
-
-    public void CloseToolbox()
-    {
-        if (StateMachine.CurrentState == CraftingState)
+        // 1. TOGGLE OFF: If currently interacting/crafting, cancel and return to idle
+        if (StateMachine.CurrentState == InteractState || StateMachine.CurrentState == CraftingState)
         {
             StateMachine.ChangeState(IdleState);
+            // NOTE: You will hook your UI closing logic up here later!
+            return;
+        }
+
+        // 2. TOGGLE ON: If free to move, check if something is nearby
+        if (StateMachine.CurrentState == IdleState || StateMachine.CurrentState == WalkState)
+        {
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, interactionRadius, interactableLayer);
+
+            if (hit != null)
+            {
+                IInteractable interactableObject = hit.GetComponent<IInteractable>();
+
+                if (interactableObject != null)
+                {
+                    interactableObject.Interact(this);
+                }
+            }
         }
     }
 
-    public void ReleaseInteraction()
+    private void OnDrawGizmos()
     {
-        if (StateMachine.CurrentState == InteractState)
-        {
-            StateMachine.ChangeState(IdleState);
-        }
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, interactionRadius);
     }
 }
