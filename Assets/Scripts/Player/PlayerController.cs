@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(PlayerAnimationManager))]
@@ -144,6 +144,13 @@ public class PlayerController : MonoBehaviour
         {
             StateMachine.ChangeState(IdleState);
             // NOTE: You will hook your UI closing logic up here later!
+            return;
+        }
+
+        if (StateMachine.CurrentState == CraftingState)
+        {
+            CraftingUI.Instance.Close(); // 🔥 CLOSE UI
+            StateMachine.ChangeState(IdleState);
             return;
         }
 

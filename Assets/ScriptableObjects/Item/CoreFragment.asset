@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: CoreFragment
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: CoreFragment
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b5c96a9dcf075454c976e1a7c8df8c2f, type: 3}
   materialType: 2

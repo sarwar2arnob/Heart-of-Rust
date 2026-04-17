@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Crafting/Recipe")]
 public class RecipeData : ScriptableObject
 {
     public List<ItemAmount> inputs;

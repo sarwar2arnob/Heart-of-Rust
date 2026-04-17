@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ScrapMetal
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Scrap Metal
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 1b8574ff60792e644bf3145982015e68, type: 3}
   materialType: 0

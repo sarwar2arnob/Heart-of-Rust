@@ -7,44 +7,29 @@ public class CraftingSystem : MonoBehaviour
     [Header("Database")]
     public List<RecipeData> recipes;
 
-    // The Observable event that other systems (like UI or Player) can listen to
     public event Action<CraftResult> OnCraftSuccess;
 
-    public bool TryCraft(List<ItemAmount> input, InventorySystem inventory)
+    public bool TryCraft(RecipeData recipe, InventorySystem inventory)
     {
-        foreach (var recipe in recipes)
+        if (!CanCraft(recipe, inventory))
         {
-            if (Match(recipe, input))
-            {
-                Consume(recipe, inventory);
-                OnCraftSuccess?.Invoke(recipe.result);
-                return true;
-            }
+            Debug.Log("Not enough materials!");
+            return false;
         }
 
-        Debug.Log("Craft Failed: No matching recipe found or insufficient quantities.");
-        return false;
+        Consume(recipe, inventory);
+
+        OnCraftSuccess?.Invoke(recipe.result);
+
+        return true;
     }
 
-    private bool Match(RecipeData recipe, List<ItemAmount> input)
+    public bool CanCraft(RecipeData recipe, InventorySystem inventory)
     {
-        // 1. If the number of distinct item slots doesn't match, it's not this recipe
-        if (recipe.inputs.Count != input.Count) return false;
-
-        // 2. Verify every required item and its exact amount exists in the input list
-        foreach (var recipeItem in recipe.inputs)
+        foreach (var item in recipe.inputs)
         {
-            bool foundMatch = false;
-            foreach (var inputItem in input)
-            {
-                if (recipeItem.item == inputItem.item && recipeItem.amount == inputItem.amount)
-                {
-                    foundMatch = true;
-                    break;
-                }
-            }
-
-            if (!foundMatch) return false;
+            if (!inventory.Has(item.item, item.amount))
+                return false;
         }
 
         return true;
