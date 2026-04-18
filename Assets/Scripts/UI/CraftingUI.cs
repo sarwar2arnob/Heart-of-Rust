@@ -37,6 +37,13 @@ public class CraftingUI : MonoBehaviour
     public void Close()
     {
         panel.SetActive(false);
+
+        // 🔥 Force player back to normal state
+        PlayerController player = FindObjectOfType<PlayerController>();
+        if (player != null)
+        {
+            player.StateMachine.ChangeState(player.IdleState);
+        }
     }
 
     void BuildRecipeList()

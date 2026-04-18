@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2615fe787cc3e4140bfec40cb10bde3b, type: 3}
-  m_Name: ManipulatorArm_Recipe
+  m_Name: FireExtinguisher
   m_EditorClassIdentifier: Assembly-CSharp::RecipeData
   inputs:
+  - item: {fileID: 11400000, guid: c159d85b10f84954a92bf5b526a76f01, type: 2}
+    amount: 1
   - item: {fileID: 11400000, guid: 71b7e2803f8692c4aba31182bd351df9, type: 2}
     amount: 1
   - item: {fileID: 11400000, guid: b0fe981c62c460342a08cef90c3dd9d8, type: 2}
     amount: 2
   result:
-    type: 1
-    module: {fileID: 0}
+    type: 0
+    module: {fileID: 11400000, guid: f50bb5d422f57ae4fa7f95c34df2951e, type: 2}
     part: 2

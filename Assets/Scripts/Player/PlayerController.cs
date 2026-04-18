@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 6f;
+    public Vector2 FacingDirection { get; private set; } = Vector2.right;
 
     [Header("Dash Settings")]
     public float dashSpeed = 15f;
@@ -118,6 +119,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.localScale = new Vector3(Mathf.Sign(moveInput.x), 1, 1);
         }
+
+        if (moveInput.x != 0)
+        {
+            FacingDirection = new Vector2(moveInput.x, 0f).normalized;
+        }
     }
 
     private void HandleDash()
@@ -173,7 +179,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void HandleUseModule()
+    public void HandleUseModule()
     {
         if (StateMachine.CurrentState == CraftingState ||
             StateMachine.CurrentState == HurtState)

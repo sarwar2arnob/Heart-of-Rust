@@ -130,12 +130,12 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Swap"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""95c8e0fd-8ade-4e07-9745-b78a3ac625f3"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""UseModule"",
@@ -360,7 +360,7 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""bf90773f-35f3-4cad-a5e4-7973046f7f2e"",
-                    ""path"": """",
+                    ""path"": ""<Mouse>/scroll/y"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

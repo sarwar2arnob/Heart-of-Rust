@@ -68,7 +68,12 @@ public class InputHandler : SingletonPersistent<InputHandler>
 
     public void SwapModuleAction(InputAction.CallbackContext context)
     {
-        if (context.performed) OnSwapModule?.Invoke(context.ReadValue<float>());
+        float value = context.ReadValue<float>();
+
+        if (value != 0)
+        {
+            OnSwapModule?.Invoke(value);
+        }
     }
 
     public void DashAction(InputAction.CallbackContext context)

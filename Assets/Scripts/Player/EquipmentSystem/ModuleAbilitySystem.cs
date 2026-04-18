@@ -1,15 +1,17 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class ModuleAbilitySystem : MonoBehaviour
 {
     private PlayerEquipment equipment;
+    private PlayerController playerController;
 
     private bool isShockImmune = false;
 
     void Awake()
     {
         equipment = GetComponent<PlayerEquipment>();
+        playerController = GetComponent<PlayerController>();
     }
 
     public void UseModule()
@@ -56,14 +58,23 @@ public class ModuleAbilitySystem : MonoBehaviour
 
     void UseFireExtinguisher()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position + transform.right, 1f);
+        float range = 2f;
+        float radius = 1.2f;
 
-        if (hit != null)
+        Vector2 center = (Vector2)transform.position + playerController.FacingDirection * range * 0.5f;
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(center, radius);
+
+        foreach (var hit in hits)
         {
             FireZone fire = hit.GetComponent<FireZone>();
             if (fire != null)
+            {
                 fire.Extinguish();
+            }
         }
+
+        Debug.DrawLine(transform.position, center, Color.red, 1f);
     }
 
     void UseShockAbsorber()
