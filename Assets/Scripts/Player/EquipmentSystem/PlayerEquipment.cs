@@ -3,8 +3,12 @@ using UnityEngine;
 
 public class PlayerEquipment : MonoBehaviour
 {
+    private float lastSwapTime = 0f;
+    private float swapCooldown = 0.25f;
+
     [Header("Debug / Testing")]
     public bool unlockAllOnStart = false;
+
 
     [Header("Permanent Parts")]
     public bool canMove { get; private set; }
@@ -128,6 +132,12 @@ public class PlayerEquipment : MonoBehaviour
 
     private void CycleModule(float direction)
     {
+        // 🛑 Prevent rapid double-trigger
+        if (Time.time - lastSwapTime < swapCooldown)
+            return;
+
+        lastSwapTime = Time.time;
+
         if (unlockedModules.Count <= 1) return;
 
         if (direction > 0)

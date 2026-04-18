@@ -46,13 +46,20 @@ public class ModuleAbilitySystem : MonoBehaviour
 
     void UseIceBreaker()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position + transform.right, 1f);
+        Vector2 origin = (Vector2)transform.position + playerController.FacingDirection * 1.2f;
+        float radius = 1.5f;
 
-        if (hit != null)
+        Collider2D[] hits = Physics2D.OverlapCircleAll(origin, radius);
+
+        foreach (var hit in hits)
         {
-            IceBlock ice = hit.GetComponent<IceBlock>();
+            IceBlock ice = hit.GetComponentInParent<IceBlock>(); // 🔥 FIX
+
             if (ice != null)
+            {
+                Debug.Log("🧊 Ice hit!");
                 ice.Break();
+            }
         }
     }
 
