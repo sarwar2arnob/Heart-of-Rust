@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
         {
             InputHandler.Instance.OnDash += HandleDash;
             InputHandler.Instance.OnInteract += HandleInteract;
+            InputHandler.Instance.OnUseModule += HandleUseModule; // ✅
         }
     }
 
@@ -64,6 +65,7 @@ public class PlayerController : MonoBehaviour
         {
             InputHandler.Instance.OnDash -= HandleDash;
             InputHandler.Instance.OnInteract -= HandleInteract;
+            InputHandler.Instance.OnUseModule -= HandleUseModule;
         }
     }
 
@@ -169,6 +171,15 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void HandleUseModule()
+    {
+        if (StateMachine.CurrentState == CraftingState ||
+            StateMachine.CurrentState == HurtState)
+            return;
+
+        GetComponent<ModuleAbilitySystem>().UseModule();
     }
 
     private void OnDrawGizmos()

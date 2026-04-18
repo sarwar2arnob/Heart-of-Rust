@@ -1,9 +1,9 @@
-public enum ModuleType
+﻿public enum ModuleType
 {
     HeavyCore,
     FilterCore,
     IceBreaker,
-    FireRemover,
+    FireExtinguisher,
     ShockAbsorber
 }
 

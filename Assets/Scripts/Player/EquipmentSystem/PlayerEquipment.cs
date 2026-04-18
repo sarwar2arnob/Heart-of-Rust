@@ -1,15 +1,15 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerEquipment : MonoBehaviour
 {
     [Header("Debug / Testing")]
-    public bool unlockAllOnStart = true; // Uncheck this later when building the real game!
+    public bool unlockAllOnStart = false;
 
     [Header("Permanent Parts")]
-    public bool canMove;
-    public bool canDash;
-    public bool canInteract;
+    public bool canMove { get; private set; }
+    public bool canDash { get; private set; }
+    public bool canInteract { get; private set; }
 
     [Header("Swappable Modules")]
     public ModuleData equippedModule { get; private set; }
@@ -19,14 +19,23 @@ public class PlayerEquipment : MonoBehaviour
 
     private void Start()
     {
-        // TEMPORARY TESTING LOGIC
         if (unlockAllOnStart)
         {
             canMove = true;
-            canDash = true;
             canInteract = true;
-            Debug.LogWarning("[DEBUG] All chassis abilities temporarily unlocked for testing!");
+            canDash = true;
+
+            Debug.LogWarning("[DEBUG] All abilities unlocked!");
         }
+        else
+        {
+            // 🔥 REAL GAME START STATE
+            canMove = false;        // unlocked in Level 1
+            canInteract = true;     // always available
+            canDash = false;        // unlocked via JumpServo
+        }
+
+        DebugCurrentState();
     }
 
     private void OnEnable()
@@ -41,7 +50,9 @@ public class PlayerEquipment : MonoBehaviour
             InputHandler.Instance.OnSwapModule -= CycleModule;
     }
 
-    // --- Progression Integration ---
+    // =========================
+    // 🔥 ENTRY FROM CRAFTING
+    // =========================
     public void ApplyCraftResult(CraftResult result)
     {
         if (result.type == ResultType.Part)
@@ -50,32 +61,54 @@ public class PlayerEquipment : MonoBehaviour
             UnlockModule(result.module);
     }
 
+    // =========================
+    // 🔧 PART UNLOCKING
+    // =========================
     private void UnlockPart(PartType part)
     {
         switch (part)
         {
             case PartType.LegActuator:
-                canMove = true;
-                Debug.Log("Unlocked: Leg Actuator! Movement enabled.");
+                if (!canMove)
+                {
+                    canMove = true;
+                    Debug.Log("Unlocked: Leg Actuator → Movement enabled");
+                }
                 break;
-            case PartType.JumpServo:
-                canDash = true;
-                Debug.Log("Unlocked: Jump Servo! Mobility enhanced.");
-                break;
+
             case PartType.ManipulatorArm:
-                canInteract = true;
-                Debug.Log("Unlocked: Manipulator Arm! Interaction enabled.");
+                if (!canInteract)
+                {
+                    canInteract = true;
+                    Debug.Log("Unlocked: Manipulator Arm → Interaction enabled");
+                }
+                break;
+
+            case PartType.JumpServo:
+                if (!canDash)
+                {
+                    canDash = true;
+                    Debug.Log("🔥 Unlocked: Jump Servo → DASH ENABLED!");
+                }
                 break;
         }
+
+        DebugCurrentState();
     }
 
+    // =========================
+    // 🔧 MODULE SYSTEM
+    // =========================
     private void UnlockModule(ModuleData newModule)
     {
+        if (newModule == null) return;
+
         if (!unlockedModules.Contains(newModule))
         {
             unlockedModules.Add(newModule);
             Debug.Log($"Module Unlocked: {newModule.type}");
 
+            // Auto-equip first module
             if (equippedModule == null)
             {
                 EquipModule(newModule);
@@ -85,8 +118,11 @@ public class PlayerEquipment : MonoBehaviour
 
     private void EquipModule(ModuleData module)
     {
+        if (module == null) return;
+
         equippedModule = module;
         currentModuleIndex = unlockedModules.IndexOf(module);
+
         Debug.Log($"Module Equipped: {module.type}");
     }
 
@@ -101,9 +137,18 @@ public class PlayerEquipment : MonoBehaviour
         else if (direction < 0)
         {
             currentModuleIndex--;
-            if (currentModuleIndex < 0) currentModuleIndex = unlockedModules.Count - 1;
+            if (currentModuleIndex < 0)
+                currentModuleIndex = unlockedModules.Count - 1;
         }
 
         EquipModule(unlockedModules[currentModuleIndex]);
+    }
+
+    // =========================
+    // 🧪 DEBUG
+    // =========================
+    private void DebugCurrentState()
+    {
+        Debug.Log($"[Equipment] Move:{canMove} | Interact:{canInteract} | Dash:{canDash}");
     }
 }

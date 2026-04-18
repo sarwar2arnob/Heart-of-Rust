@@ -21,7 +21,7 @@
                     "id": "852140f2-7766-474d-8707-702459ba45f3",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "Hold",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
@@ -46,6 +46,15 @@
                     "name": "Swap",
                     "type": "Button",
                     "id": "95c8e0fd-8ade-4e07-9745-b78a3ac625f3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UseModule",
+                    "type": "Button",
+                    "id": "485eeec6-f40b-40a0-99be-1dcd1cc5449a",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -270,6 +279,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Swap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "517cfe08-71c1-4233-a2e9-d293a1dba925",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseModule",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -7,12 +7,10 @@ public class InputHandler : SingletonPersistent<InputHandler>
 {
     private PlayerInput playerInput;
     private InputAction moveInput;
-
     public Vector2 MoveDirection { get; private set; }
-
-
     public event Action OnInteract;
     public event Action OnDash;
+    public event Action OnUseModule;
     public event Action OnCraftingOpen;
     public event Action<float> OnSwapModule;
     public event Action OnPause;
@@ -82,6 +80,12 @@ public class InputHandler : SingletonPersistent<InputHandler>
     {
         if (context.performed) OnPause?.Invoke();
         Debug.Log("Pause action performed");
+    }
+
+    public void UseModuleAction(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            OnUseModule?.Invoke();
     }
 
     public void SwitchActionMap(string actionMapName)

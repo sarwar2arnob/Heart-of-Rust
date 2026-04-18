@@ -1,6 +1,6 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GasZone : MonoBehaviour
+public class ElectricZone : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D col)
     {
@@ -8,7 +8,7 @@ public class GasZone : MonoBehaviour
         {
             if (!abilitySystem.IsShockImmune())
             {
-                Debug.Log("Taking gas damage!");
+                Debug.Log("⚡ Taking electric damage!");
             }
         }
     }
