@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wire
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Wire
-  icon: {fileID: 21300000, guid: e9b28be96624fac4baad6c916a4e65bf, type: 3}
+  icon: {fileID: 7931290300951764610, guid: 009addd7476b22e4ab9d00f2188d8e5d, type: 3}
   materialType: 1
