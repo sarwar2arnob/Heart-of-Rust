@@ -6,6 +6,9 @@ public class RecipeData : ScriptableObject
 {
     public List<ItemAmount> inputs;
     public CraftResult result;
+
+    [Header("Progression")]
+    public bool unlockedByDefault = false;
 }
 
 [System.Serializable]

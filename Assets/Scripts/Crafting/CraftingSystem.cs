@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,21 +9,47 @@ public class CraftingSystem : MonoBehaviour
 
     public event Action<CraftResult> OnCraftSuccess;
 
-    public bool TryCraft(RecipeData recipe, InventorySystem inventory)
+    // 🔍 FIND MATCHING RECIPE FROM INPUT ITEMS
+    public RecipeData FindMatchingRecipe(List<ItemData> inputs)
     {
-        if (!CanCraft(recipe, inventory))
+        foreach (var recipe in recipes)
         {
-            Debug.Log("Not enough materials!");
-            return false;
+            if (!RecipeManager.Instance.IsUnlocked(recipe))
+                continue;
+
+            if (Matches(recipe, inputs))
+                return recipe;
         }
 
-        Consume(recipe, inventory);
-
-        OnCraftSuccess?.Invoke(recipe.result);
-
-        return true;
+        return null;
     }
 
+    // 🧠 MATCH LOGIC (ORDER-INDPENDENT)
+    private bool Matches(RecipeData recipe, List<ItemData> inputs)
+    {
+        List<ItemData> required = new();
+
+        foreach (var i in recipe.inputs)
+        {
+            for (int j = 0; j < i.amount; j++)
+                required.Add(i.item);
+        }
+
+        if (required.Count != inputs.Count)
+            return false;
+
+        foreach (var input in inputs)
+        {
+            if (!required.Contains(input))
+                return false;
+
+            required.Remove(input);
+        }
+
+        return required.Count == 0;
+    }
+
+    // 🔎 CHECK MATERIALS IN INVENTORY
     public bool CanCraft(RecipeData recipe, InventorySystem inventory)
     {
         foreach (var item in recipe.inputs)
@@ -31,6 +57,19 @@ public class CraftingSystem : MonoBehaviour
             if (!inventory.Has(item.item, item.amount))
                 return false;
         }
+
+        return true;
+    }
+
+    // ⚙️ PERFORM CRAFT
+    public bool TryCraft(RecipeData recipe, InventorySystem inventory)
+    {
+        if (!CanCraft(recipe, inventory))
+            return false;
+
+        Consume(recipe, inventory);
+
+        OnCraftSuccess?.Invoke(recipe.result);
 
         return true;
     }

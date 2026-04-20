@@ -8,7 +8,14 @@ public class ElectricZone : MonoBehaviour
         {
             if (!abilitySystem.IsShockImmune())
             {
-                Debug.Log("⚡ Taking electric damage!");
+                if (col.TryGetComponent(out IDamageable damageable))
+                {
+                    damageable.TakeDamage(new DamageData(
+                        10f,
+                        DamageType.Electric,
+                        transform.position
+                    ));
+                }
             }
         }
     }

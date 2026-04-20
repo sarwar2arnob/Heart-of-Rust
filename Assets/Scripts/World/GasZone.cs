@@ -4,12 +4,13 @@ public class GasZone : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D col)
     {
-        if (col.TryGetComponent(out ModuleAbilitySystem abilitySystem))
+        if (col.TryGetComponent(out IDamageable damageable))
         {
-            if (!abilitySystem.IsShockImmune())
-            {
-                Debug.Log("Taking gas damage!");
-            }
+            damageable.TakeDamage(new DamageData(
+                5f,
+                DamageType.Gas,
+                transform.position
+            ));
         }
     }
 }
