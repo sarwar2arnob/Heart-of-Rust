@@ -12,11 +12,16 @@ public class Toolbox : MonoBehaviour, IInteractable
 
     public void Interact(PlayerController player)
     {
-        var inventory = FindFirstObjectByType<InventorySystem>();
-        var ui = FindFirstObjectByType<CraftingUI_Slots>();
+        var inventory = FindAnyObjectByType<InventorySystem>();
+        var ui = FindAnyObjectByType<CraftingUI_Slots>(FindObjectsInactive.Include); // <-- fix
+
+        if (ui == null)
+        {
+            Debug.LogError("[Toolbox] CraftingUI_Slots not found in scene!");
+            return;
+        }
 
         ui.Open(craftingSystem, inventory, player.equipment);
-
         player.StateMachine.ChangeState(player.CraftingState);
     }
 }
