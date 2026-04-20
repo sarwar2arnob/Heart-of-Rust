@@ -22,17 +22,28 @@ public class CraftingUI_Slots : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void Setup(InventorySystem inv)
+    {
+        inventory = inv;
+
+        slot1.Setup(inv);
+        slot2.Setup(inv);
+        slot3.Setup(inv);
+    }
+
     public void Open(CraftingSystem system, InventorySystem inv, PlayerEquipment eq)
     {
         craftingSystem = system;
         inventory = inv;
         equipment = eq;
 
-        slot1.Init(inv);
-        slot2.Init(inv);
-        slot3.Init(inv);
+        slot1.Init();
+        slot2.Init();
+        slot3.Init();
 
-        ClearSlots();
+        if (feedbackText != null)
+            feedbackText.text = "";
+
         gameObject.SetActive(true);
     }
 
@@ -42,7 +53,8 @@ public class CraftingUI_Slots : MonoBehaviour
         if (slot2.IsEmpty()) { slot2.SetItem(item); return; }
         if (slot3.IsEmpty()) { slot3.SetItem(item); return; }
 
-        feedbackText.text = "Slots full!";
+        if (feedbackText != null)
+            feedbackText.text = "Slots full!";
     }
 
     public void TryCraft()

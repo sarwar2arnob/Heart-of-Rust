@@ -14,16 +14,20 @@ public class CraftingSlotUI : MonoBehaviour
 
     private InventorySystem inventory;
 
-    public void Init(InventorySystem inv)
+    public void Setup(InventorySystem inv)
     {
         inventory = inv;
 
         addButton.onClick.RemoveAllListeners();
         removeButton.onClick.RemoveAllListeners();
-
         addButton.onClick.AddListener(OnAdd);
         removeButton.onClick.AddListener(OnRemove);
 
+        Clear();
+    }
+
+    public void Init()
+    {
         Clear();
     }
 
@@ -31,19 +35,15 @@ public class CraftingSlotUI : MonoBehaviour
     {
         CurrentItem = item;
         Count = 1;
-
         icon.sprite = item.icon;
         icon.enabled = true;
-
         UpdateUI();
     }
 
     private void OnAdd()
     {
         if (CurrentItem == null) return;
-
-        if (!inventory.Has(CurrentItem, Count + 1))
-            return;
+        if (!inventory.Has(CurrentItem, Count + 1)) return;
 
         Count++;
         UpdateUI();
@@ -68,7 +68,6 @@ public class CraftingSlotUI : MonoBehaviour
     {
         CurrentItem = null;
         Count = 0;
-
         icon.enabled = false;
         countText.text = "";
     }
