@@ -12,8 +12,8 @@ public class Toolbox : MonoBehaviour, IInteractable
 
     public void Interact(PlayerController player)
     {
-        InventorySystem inventory = FindObjectOfType<InventorySystem>();
-        CraftingUI_Slots ui = FindObjectOfType<CraftingUI_Slots>();
+        var inventory = FindFirstObjectByType<InventorySystem>();
+        var ui = FindFirstObjectByType<CraftingUI_Slots>();
 
         ui.Open(craftingSystem, inventory, player.equipment);
 

@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        FindObjectOfType<ClueManager>().ShowClue(clueText);
+        FindFirstObjectByType<ClueManager>().ShowClue(clueText);
     }
 
     public void CompleteLevel(int nextLevelBuildIndex)

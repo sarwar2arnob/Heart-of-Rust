@@ -8,7 +8,7 @@ public class ModuleUI : MonoBehaviour
 
     void Start()
     {
-        equipment = FindObjectOfType<PlayerEquipment>();
+        equipment = FindFirstObjectByType<PlayerEquipment>();
     }
 
     void Update()

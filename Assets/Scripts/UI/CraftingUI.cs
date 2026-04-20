@@ -21,7 +21,7 @@ public class CraftingUI : MonoBehaviour
 
     void Start()
     {
-        inventory = FindObjectOfType<InventorySystem>();
+        inventory = FindFirstObjectByType<InventorySystem>();
     }
 
     public void Open(Toolbox toolbox, CraftingSystem craftingSystem)
@@ -39,7 +39,7 @@ public class CraftingUI : MonoBehaviour
         panel.SetActive(false);
 
         // 🔥 Force player back to normal state
-        PlayerController player = FindObjectOfType<PlayerController>();
+        PlayerController player = FindFirstObjectByType<PlayerController>();
         if (player != null)
         {
             player.StateMachine.ChangeState(player.IdleState);

@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class CraftingSystem : MonoBehaviour
 {
-    [Header("Database")]
     public List<RecipeData> recipes;
 
     public event Action<CraftResult> OnCraftSuccess;
 
-    // 🔍 FIND MATCHING RECIPE FROM INPUT ITEMS
     public RecipeData FindMatchingRecipe(List<ItemData> inputs)
     {
         foreach (var recipe in recipes)
@@ -20,11 +18,9 @@ public class CraftingSystem : MonoBehaviour
             if (Matches(recipe, inputs))
                 return recipe;
         }
-
         return null;
     }
 
-    // 🧠 MATCH LOGIC (ORDER-INDPENDENT)
     private bool Matches(RecipeData recipe, List<ItemData> inputs)
     {
         List<ItemData> required = new();
@@ -49,7 +45,6 @@ public class CraftingSystem : MonoBehaviour
         return required.Count == 0;
     }
 
-    // 🔎 CHECK MATERIALS IN INVENTORY
     public bool CanCraft(RecipeData recipe, InventorySystem inventory)
     {
         foreach (var item in recipe.inputs)
@@ -57,28 +52,20 @@ public class CraftingSystem : MonoBehaviour
             if (!inventory.Has(item.item, item.amount))
                 return false;
         }
-
         return true;
     }
 
-    // ⚙️ PERFORM CRAFT
     public bool TryCraft(RecipeData recipe, InventorySystem inventory)
     {
         if (!CanCraft(recipe, inventory))
             return false;
 
-        Consume(recipe, inventory);
-
-        OnCraftSuccess?.Invoke(recipe.result);
-
-        return true;
-    }
-
-    private void Consume(RecipeData recipe, InventorySystem inventory)
-    {
         foreach (var item in recipe.inputs)
         {
             inventory.Remove(item.item, item.amount);
         }
+
+        OnCraftSuccess?.Invoke(recipe.result);
+        return true;
     }
 }

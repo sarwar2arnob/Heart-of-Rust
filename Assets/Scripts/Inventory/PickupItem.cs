@@ -7,7 +7,7 @@ public class PickupItem : MonoBehaviour, IInteractable
     public void Interact(PlayerController player)
     {
         // 1. Add to inventory
-        FindObjectOfType<InventorySystem>().Add(itemData);
+        FindFirstObjectByType<InventorySystem>().Add(itemData);
 
         // 2. Play a quick pickup animation but DON'T change the state (player can keep walking)
         player.AnimManager.TriggerInteract();

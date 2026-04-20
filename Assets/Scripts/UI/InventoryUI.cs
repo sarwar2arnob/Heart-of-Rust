@@ -11,7 +11,7 @@ public class InventoryUI : MonoBehaviour
 
     void Start()
     {
-        inventory = FindObjectOfType<InventorySystem>();
+        inventory = FindFirstObjectByType<InventorySystem>();
 
         if (inventory == null)
         {

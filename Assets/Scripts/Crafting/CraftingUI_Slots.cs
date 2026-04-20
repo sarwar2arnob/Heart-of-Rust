@@ -4,38 +4,54 @@ using TMPro;
 
 public class CraftingUI_Slots : MonoBehaviour
 {
-    [Header("Slots")]
     [SerializeField] private CraftingSlotUI slot1;
     [SerializeField] private CraftingSlotUI slot2;
+    [SerializeField] private CraftingSlotUI slot3;
 
-    [Header("UI")]
     [SerializeField] private TMP_Text feedbackText;
 
     private CraftingSystem craftingSystem;
     private InventorySystem inventory;
-    private PlayerEquipment playerEquipment;
+    private PlayerEquipment equipment;
 
-    public void Open(CraftingSystem system, InventorySystem inv, PlayerEquipment equipment)
+    public static CraftingUI_Slots Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+        gameObject.SetActive(false);
+    }
+
+    public void Open(CraftingSystem system, InventorySystem inv, PlayerEquipment eq)
     {
         craftingSystem = system;
         inventory = inv;
-        playerEquipment = equipment;
+        equipment = eq;
 
+        slot1.Init(inv);
+        slot2.Init(inv);
+        slot3.Init(inv);
+
+        ClearSlots();
         gameObject.SetActive(true);
     }
 
-    public void Close()
+    public void AddItemToSlot(ItemData item)
     {
-        gameObject.SetActive(false);
-        ClearSlots();
+        if (slot1.IsEmpty()) { slot1.SetItem(item); return; }
+        if (slot2.IsEmpty()) { slot2.SetItem(item); return; }
+        if (slot3.IsEmpty()) { slot3.SetItem(item); return; }
+
+        feedbackText.text = "Slots full!";
     }
 
     public void TryCraft()
     {
         List<ItemData> inputs = new();
 
-        if (!slot1.IsEmpty()) inputs.Add(slot1.CurrentItem);
-        if (!slot2.IsEmpty()) inputs.Add(slot2.CurrentItem);
+        Add(slot1, inputs);
+        Add(slot2, inputs);
+        Add(slot3, inputs);
 
         if (inputs.Count == 0)
         {
@@ -63,9 +79,18 @@ public class CraftingUI_Slots : MonoBehaviour
         ClearSlots();
     }
 
+    private void Add(CraftingSlotUI slot, List<ItemData> list)
+    {
+        for (int i = 0; i < slot.Count; i++)
+        {
+            list.Add(slot.CurrentItem);
+        }
+    }
+
     private void ClearSlots()
     {
         slot1.Clear();
         slot2.Clear();
+        slot3.Clear();
     }
 }

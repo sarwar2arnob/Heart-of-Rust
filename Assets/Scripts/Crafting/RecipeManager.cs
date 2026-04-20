@@ -15,7 +15,6 @@ public class RecipeManager : MonoBehaviour
     public void UnlockRecipe(RecipeData recipe)
     {
         if (recipe == null) return;
-
         if (unlockedRecipes.Contains(recipe)) return;
 
         unlockedRecipes.Add(recipe);
