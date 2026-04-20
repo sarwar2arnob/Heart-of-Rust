@@ -5,7 +5,7 @@ public class PlayerEquipment : MonoBehaviour
 {
     private float lastSwapTime = 0f;
     private float swapCooldown = 0.25f;
-
+    private CraftingSystem craftingSystem;
     [Header("Debug / Testing")]
     public bool unlockAllOnStart = false;
 
@@ -40,6 +40,12 @@ public class PlayerEquipment : MonoBehaviour
         }
 
         DebugCurrentState();
+
+        craftingSystem = FindAnyObjectByType<CraftingSystem>();
+        if (craftingSystem != null)
+            craftingSystem.OnCraftSuccess += ApplyCraftResult;
+        else
+            Debug.LogError("[PlayerEquipment] CraftingSystem not found!");
     }
 
     private void OnEnable()
@@ -154,6 +160,11 @@ public class PlayerEquipment : MonoBehaviour
         EquipModule(unlockedModules[currentModuleIndex]);
     }
 
+    private void OnDestroy()
+    {
+        if (craftingSystem != null)
+            craftingSystem.OnCraftSuccess -= ApplyCraftResult;
+    }
     // =========================
     // 🧪 DEBUG
     // =========================
