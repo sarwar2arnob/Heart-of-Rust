@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 42072bb0efdc555408f40fc7ff6dccce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8009606488022590625
+    second: Robotic arm integrated fire-extinguisher-spritesheet_0
+  - first:
+      213: -3520883166805563608
+    second: Robotic arm integrated fire-extinguisher-spritesheet_1
+  - first:
+      213: -7978756456789600839
+    second: Robotic arm integrated fire-extinguisher-spritesheet_2
+  - first:
+      213: 4279677349743364765
+    second: Robotic arm integrated fire-extinguisher-spritesheet_3
+  - first:
+      213: -259764159357080589
+    second: Robotic arm integrated fire-extinguisher-spritesheet_4
+  - first:
+      213: 4655808680417254991
+    second: Robotic arm integrated fire-extinguisher-spritesheet_5
+  - first:
+      213: -1243994704873205223
+    second: Robotic arm integrated fire-extinguisher-spritesheet_6
+  - first:
+      213: -8709259641951726633
+    second: Robotic arm integrated fire-extinguisher-spritesheet_7
+  - first:
+      213: 9054421776216919373
+    second: Robotic arm integrated fire-extinguisher-spritesheet_8
+  - first:
+      213: -3366590896117193359
+    second: Robotic arm integrated fire-extinguisher-spritesheet_9
+  - first:
+      213: -2936537388060486593
+    second: Robotic arm integrated fire-extinguisher-spritesheet_10
+  - first:
+      213: 2949689298842282296
+    second: Robotic arm integrated fire-extinguisher-spritesheet_11
+  - first:
+      213: 1309989435800131282
+    second: Robotic arm integrated fire-extinguisher-spritesheet_12
+  - first:
+      213: -926719870473265865
+    second: Robotic arm integrated fire-extinguisher-spritesheet_13
+  - first:
+      213: 3257826446815674825
+    second: Robotic arm integrated fire-extinguisher-spritesheet_14
+  - first:
+      213: -6538398772149820062
+    second: Robotic arm integrated fire-extinguisher-spritesheet_15
+  - first:
+      213: 4363937142912997110
+    second: Robotic arm integrated fire-extinguisher-spritesheet_16
+  - first:
+      213: -2610455230650507113
+    second: Robotic arm integrated fire-extinguisher-spritesheet_17
+  - first:
+      213: 8041551795711282251
+    second: Robotic arm integrated fire-extinguisher-spritesheet_18
+  - first:
+      213: 5822541869788701247
+    second: Robotic arm integrated fire-extinguisher-spritesheet_19
+  - first:
+      213: 3771161988664934474
+    second: Robotic arm integrated fire-extinguisher-spritesheet_20
+  - first:
+      213: -4070542019821210372
+    second: Robotic arm integrated fire-extinguisher-spritesheet_21
+  - first:
+      213: -3750319420624500434
+    second: Robotic arm integrated fire-extinguisher-spritesheet_22
+  - first:
+      213: -1816299306102321889
+    second: Robotic arm integrated fire-extinguisher-spritesheet_23
+  - first:
+      213: 893441460908537423
+    second: Robotic arm integrated fire-extinguisher-spritesheet_24
+  - first:
+      213: -7450574730767060491
+    second: Robotic arm integrated fire-extinguisher-spritesheet_25
+  - first:
+      213: 5461187694346258558
+    second: Robotic arm integrated fire-extinguisher-spritesheet_26
+  - first:
+      213: 3058356893743106784
+    second: Robotic arm integrated fire-extinguisher-spritesheet_27
+  - first:
+      213: 9163118485628785986
+    second: Robotic arm integrated fire-extinguisher-spritesheet_28
+  - first:
+      213: -8458007168993589735
+    second: Robotic arm integrated fire-extinguisher-spritesheet_29
+  - first:
+      213: -2221331322456877976
+    second: Robotic arm integrated fire-extinguisher-spritesheet_30
+  - first:
+      213: 7680665993769302228
+    second: Robotic arm integrated fire-extinguisher-spritesheet_31
+  - first:
+      213: -2468736119167074159
+    second: Robotic arm integrated fire-extinguisher-spritesheet_32
+  - first:
+      213: 7268809591018698827
+    second: Robotic arm integrated fire-extinguisher-spritesheet_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1238
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a420450aa6d72f60800000000000000
+      internalID: 8009606488022590625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1069
+        width: 156
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827e6ea0a6f432fc0800000000000000
+      internalID: -3520883166805563608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1069
+        width: 102
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b593bb9643c54190800000000000000
+      internalID: -7978756456789600839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1210
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a0db8ffd7746b30800000000000000
+      internalID: 4279677349743364765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1069
+        width: 102
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fba4249fd1256cf0800000000000000
+      internalID: -259764159357080589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1209
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e537ac351cc9040800000000000000
+      internalID: 4655808680417254991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1068
+        width: 152
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912d09928617cbee0800000000000000
+      internalID: -1243994704873205223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1068
+        width: 155
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d352d0df7e722780800000000000000
+      internalID: -8709259641951726633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 813
+        width: 157
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d88f112a4c7ad70800000000000000
+      internalID: 9054421776216919373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 813
+        width: 159
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175eedcba677741d0800000000000000
+      internalID: -3366590896117193359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 813
+        width: 155
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f345003ddc25f37d0800000000000000
+      internalID: -2936537388060486593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 812
+        width: 161
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839e3470ac66fe820800000000000000
+      internalID: 2949689298842282296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 812
+        width: 160
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6916483740e2210800000000000000
+      internalID: 1309989435800131282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 557
+        width: 155
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d15221031a323f0800000000000000
+      internalID: -926719870473265865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 728
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1425684ef163d20800000000000000
+      internalID: 3257826446815674825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 556
+        width: 158
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265e82a65f0f245a0800000000000000
+      internalID: -6538398772149820062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 557
+        width: 102
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f65679d5b1df8c30800000000000000
+      internalID: 4363937142912997110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 697
+        width: 43
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790240b6cccc5cbd0800000000000000
+      internalID: -2610455230650507113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 557
+        width: 102
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c864290c4599f60800000000000000
+      internalID: 8041551795711282251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 695
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f32289e3bf2ddc050800000000000000
+      internalID: 5822541869788701247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 557
+        width: 159
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4044d429dbd55430800000000000000
+      internalID: 3771161988664934474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 473
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4714189978287c0800000000000000
+      internalID: -4070542019821210372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 301
+        width: 156
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e298d636b5034fbc0800000000000000
+      internalID: -3750319420624500434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 468
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d8bfd77653bc6e0800000000000000
+      internalID: -1816299306102321889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 301
+        width: 158
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f463f096644266c00800000000000000
+      internalID: 893441460908537423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 301
+        width: 159
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1b028d1cd3a9890800000000000000
+      internalID: -7450574730767060491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 301
+        width: 103
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e784e3df5490acb40800000000000000
+      internalID: 5461187694346258558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 441
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eacce71467717a20800000000000000
+      internalID: 3058356893743106784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 301
+        width: 156
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24518b2e6bfe92f70800000000000000
+      internalID: 9163118485628785986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 44
+        width: 160
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9160e60da4f1f9a80800000000000000
+      internalID: -8458007168993589735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 44
+        width: 159
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864528c6eee3c21e0800000000000000
+      internalID: -2221331322456877976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 45
+        width: 158
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8ba050705379a60800000000000000
+      internalID: 7680665993769302228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 45
+        width: 156
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190cedc54994dbdd0800000000000000
+      internalID: -2468736119167074159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotic arm integrated fire-extinguisher-spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 45
+        width: 159
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b483f9cafcfffd460800000000000000
+      internalID: 7268809591018698827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Robotic arm integrated fire-extinguisher-spritesheet_0: 8009606488022590625
+      Robotic arm integrated fire-extinguisher-spritesheet_1: -3520883166805563608
+      Robotic arm integrated fire-extinguisher-spritesheet_10: -2936537388060486593
+      Robotic arm integrated fire-extinguisher-spritesheet_11: 2949689298842282296
+      Robotic arm integrated fire-extinguisher-spritesheet_12: 1309989435800131282
+      Robotic arm integrated fire-extinguisher-spritesheet_13: -926719870473265865
+      Robotic arm integrated fire-extinguisher-spritesheet_14: 3257826446815674825
+      Robotic arm integrated fire-extinguisher-spritesheet_15: -6538398772149820062
+      Robotic arm integrated fire-extinguisher-spritesheet_16: 4363937142912997110
+      Robotic arm integrated fire-extinguisher-spritesheet_17: -2610455230650507113
+      Robotic arm integrated fire-extinguisher-spritesheet_18: 8041551795711282251
+      Robotic arm integrated fire-extinguisher-spritesheet_19: 5822541869788701247
+      Robotic arm integrated fire-extinguisher-spritesheet_2: -7978756456789600839
+      Robotic arm integrated fire-extinguisher-spritesheet_20: 3771161988664934474
+      Robotic arm integrated fire-extinguisher-spritesheet_21: -4070542019821210372
+      Robotic arm integrated fire-extinguisher-spritesheet_22: -3750319420624500434
+      Robotic arm integrated fire-extinguisher-spritesheet_23: -1816299306102321889
+      Robotic arm integrated fire-extinguisher-spritesheet_24: 893441460908537423
+      Robotic arm integrated fire-extinguisher-spritesheet_25: -7450574730767060491
+      Robotic arm integrated fire-extinguisher-spritesheet_26: 5461187694346258558
+      Robotic arm integrated fire-extinguisher-spritesheet_27: 3058356893743106784
+      Robotic arm integrated fire-extinguisher-spritesheet_28: 9163118485628785986
+      Robotic arm integrated fire-extinguisher-spritesheet_29: -8458007168993589735
+      Robotic arm integrated fire-extinguisher-spritesheet_3: 4279677349743364765
+      Robotic arm integrated fire-extinguisher-spritesheet_30: -2221331322456877976
+      Robotic arm integrated fire-extinguisher-spritesheet_31: 7680665993769302228
+      Robotic arm integrated fire-extinguisher-spritesheet_32: -2468736119167074159
+      Robotic arm integrated fire-extinguisher-spritesheet_33: 7268809591018698827
+      Robotic arm integrated fire-extinguisher-spritesheet_4: -259764159357080589
+      Robotic arm integrated fire-extinguisher-spritesheet_5: 4655808680417254991
+      Robotic arm integrated fire-extinguisher-spritesheet_6: -1243994704873205223
+      Robotic arm integrated fire-extinguisher-spritesheet_7: -8709259641951726633
+      Robotic arm integrated fire-extinguisher-spritesheet_8: 9054421776216919373
+      Robotic arm integrated fire-extinguisher-spritesheet_9: -3366590896117193359
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

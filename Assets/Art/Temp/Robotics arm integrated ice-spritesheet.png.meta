@@ -1,0 +1,1599 @@
+fileFormatVersion: 2
+guid: e584efc2a50d56a47b04142eb3f66d17
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8134729938897976087
+    second: Robotics arm integrated ice-spritesheet_0
+  - first:
+      213: 8648321546507902422
+    second: Robotics arm integrated ice-spritesheet_1
+  - first:
+      213: 3964806960401070541
+    second: Robotics arm integrated ice-spritesheet_2
+  - first:
+      213: 4609678231043397869
+    second: Robotics arm integrated ice-spritesheet_3
+  - first:
+      213: 8180453150316728819
+    second: Robotics arm integrated ice-spritesheet_4
+  - first:
+      213: 8387315243928151017
+    second: Robotics arm integrated ice-spritesheet_5
+  - first:
+      213: 3779996706007547723
+    second: Robotics arm integrated ice-spritesheet_6
+  - first:
+      213: -2308397071816145842
+    second: Robotics arm integrated ice-spritesheet_7
+  - first:
+      213: 2015649264773528147
+    second: Robotics arm integrated ice-spritesheet_8
+  - first:
+      213: -4058080574860829425
+    second: Robotics arm integrated ice-spritesheet_9
+  - first:
+      213: 5615778334169278791
+    second: Robotics arm integrated ice-spritesheet_10
+  - first:
+      213: -4783825537607855152
+    second: Robotics arm integrated ice-spritesheet_11
+  - first:
+      213: 7043608952694512676
+    second: Robotics arm integrated ice-spritesheet_12
+  - first:
+      213: -8381276588820453723
+    second: Robotics arm integrated ice-spritesheet_13
+  - first:
+      213: 3599134561295660677
+    second: Robotics arm integrated ice-spritesheet_14
+  - first:
+      213: 1072073697947864251
+    second: Robotics arm integrated ice-spritesheet_15
+  - first:
+      213: 6290593537933834256
+    second: Robotics arm integrated ice-spritesheet_16
+  - first:
+      213: 9202548008665884864
+    second: Robotics arm integrated ice-spritesheet_17
+  - first:
+      213: -4622100310170062028
+    second: Robotics arm integrated ice-spritesheet_18
+  - first:
+      213: 6184298947065057967
+    second: Robotics arm integrated ice-spritesheet_19
+  - first:
+      213: -3432625455899162176
+    second: Robotics arm integrated ice-spritesheet_20
+  - first:
+      213: -494741981430084255
+    second: Robotics arm integrated ice-spritesheet_21
+  - first:
+      213: -9014738499383129646
+    second: Robotics arm integrated ice-spritesheet_22
+  - first:
+      213: 8698719642748825570
+    second: Robotics arm integrated ice-spritesheet_23
+  - first:
+      213: 5504623791413807783
+    second: Robotics arm integrated ice-spritesheet_24
+  - first:
+      213: 5250502357529775083
+    second: Robotics arm integrated ice-spritesheet_25
+  - first:
+      213: -5904244464248479450
+    second: Robotics arm integrated ice-spritesheet_26
+  - first:
+      213: 1185500337666214122
+    second: Robotics arm integrated ice-spritesheet_27
+  - first:
+      213: 2988180123779375105
+    second: Robotics arm integrated ice-spritesheet_28
+  - first:
+      213: -9002454007567039725
+    second: Robotics arm integrated ice-spritesheet_29
+  - first:
+      213: -6167363795607490166
+    second: Robotics arm integrated ice-spritesheet_30
+  - first:
+      213: 4609495251187440997
+    second: Robotics arm integrated ice-spritesheet_31
+  - first:
+      213: 8950918441967944058
+    second: Robotics arm integrated ice-spritesheet_32
+  - first:
+      213: 3550758980121282064
+    second: Robotics arm integrated ice-spritesheet_33
+  - first:
+      213: 1459269559423887013
+    second: Robotics arm integrated ice-spritesheet_34
+  - first:
+      213: 4814489862377252999
+    second: Robotics arm integrated ice-spritesheet_35
+  - first:
+      213: -1355438521785982188
+    second: Robotics arm integrated ice-spritesheet_36
+  - first:
+      213: 427215181454164144
+    second: Robotics arm integrated ice-spritesheet_37
+  - first:
+      213: -7943674327582792571
+    second: Robotics arm integrated ice-spritesheet_38
+  - first:
+      213: -7598695542361176027
+    second: Robotics arm integrated ice-spritesheet_39
+  - first:
+      213: 1123852685047631122
+    second: Robotics arm integrated ice-spritesheet_40
+  - first:
+      213: 8595488961866400504
+    second: Robotics arm integrated ice-spritesheet_41
+  - first:
+      213: -521014516135561173
+    second: Robotics arm integrated ice-spritesheet_42
+  - first:
+      213: 2612957153316281018
+    second: Robotics arm integrated ice-spritesheet_43
+  - first:
+      213: -8596851049266179306
+    second: Robotics arm integrated ice-spritesheet_44
+  - first:
+      213: -2758620432264371353
+    second: Robotics arm integrated ice-spritesheet_45
+  - first:
+      213: -3853235023179322736
+    second: Robotics arm integrated ice-spritesheet_46
+  - first:
+      213: -100802084310912721
+    second: Robotics arm integrated ice-spritesheet_47
+  - first:
+      213: -855011246861502400
+    second: Robotics arm integrated ice-spritesheet_48
+  - first:
+      213: -1287733873268771319
+    second: Robotics arm integrated ice-spritesheet_49
+  - first:
+      213: -4375124184161429738
+    second: Robotics arm integrated ice-spritesheet_50
+  - first:
+      213: 1098907373048947398
+    second: Robotics arm integrated ice-spritesheet_51
+  - first:
+      213: -4561542424137257286
+    second: Robotics arm integrated ice-spritesheet_52
+  - first:
+      213: -7262520164449743567
+    second: Robotics arm integrated ice-spritesheet_53
+  - first:
+      213: 7964725041567989338
+    second: Robotics arm integrated ice-spritesheet_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1091
+        width: 134
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71bbfbf97cd54e070800000000000000
+      internalID: 8134729938897976087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1091
+        width: 135
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ddd5f230a2050870800000000000000
+      internalID: 8648321546507902422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1088
+        width: 136
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9b3bd8ce2d50730800000000000000
+      internalID: 3964806960401070541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1104
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de851329dedd8ff30800000000000000
+      internalID: 4609678231043397869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1081
+        width: 147
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f19a5e5ccec68170800000000000000
+      internalID: 8180453150316728819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1104
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e36e85c6cab56470800000000000000
+      internalID: 8387315243928151017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1077
+        width: 153
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ff9b11afe357430800000000000000
+      internalID: 3779996706007547723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 847
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44c8d5f71de6ffd0800000000000000
+      internalID: -2308397071816145842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 819
+        width: 159
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a7a92b35609fb10800000000000000
+      internalID: 2015649264773528147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 847
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dd181c73dcea7c0800000000000000
+      internalID: -4058080574860829425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 821
+        width: 160
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749ae7924a04fed40800000000000000
+      internalID: 5615778334169278791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 846
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d31173f4007c9db0800000000000000
+      internalID: -4783825537607855152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 826
+        width: 66
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c1e1a160defb160800000000000000
+      internalID: 7043608952694512676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 835
+        width: 129
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a62f0f2959bfab80800000000000000
+      internalID: -8381276588820453723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 846
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586fbd080d1b2f130800000000000000
+      internalID: 3599134561295660677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 828
+        width: 65
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcc8332955c0ee00800000000000000
+      internalID: 1072073697947864251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 835
+        width: 126
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018f9e66e7dac4750800000000000000
+      internalID: 6290593537933834256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 830
+        width: 63
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8220d18a406bf70800000000000000
+      internalID: 9202548008665884864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 835
+        width: 125
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4333710c1400bdfb0800000000000000
+      internalID: -4622100310170062028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 823
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa292a4602b03d550800000000000000
+      internalID: 6184298947065057967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 824
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9ca2ea55ddc50d0800000000000000
+      internalID: -3432625455899162176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 826
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d03650ac25229f0800000000000000
+      internalID: -494741981430084255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 573
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d90b31d81735e280800000000000000
+      internalID: -9014738499383129646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 579
+        width: 125
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efa1c26d6f08b870800000000000000
+      internalID: 8698719642748825570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 573
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa426d6c2a546c40800000000000000
+      internalID: 5504623791413807783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 579
+        width: 125
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebc9e863188dd840800000000000000
+      internalID: 5250502357529775083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 573
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621276911f8ef0ea0800000000000000
+      internalID: -5904244464248479450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 579
+        width: 128
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae843bba64eb37010800000000000000
+      internalID: 1185500337666214122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 573
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100a0c29df5287920800000000000000
+      internalID: 2988180123779375105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 579
+        width: 133
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313cc24f6cbd01380800000000000000
+      internalID: -9002454007567039725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 573
+        width: 143
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81f532dd4f196aa0800000000000000
+      internalID: -6167363795607490166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 310
+        width: 151
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d90e0428738ff30800000000000000
+      internalID: 4609495251187440997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 306
+        width: 158
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a710ef226ec083c70800000000000000
+      internalID: 8950918441967944058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 335
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016482dca74d64130800000000000000
+      internalID: 3550758980121282064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 308
+        width: 159
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a66009ceed504410800000000000000
+      internalID: 1459269559423887013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 334
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78827b5850180d240800000000000000
+      internalID: 4814489862377252999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 310
+        width: 160
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413e01a88d3803de0800000000000000
+      internalID: -1355438521785982188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 334
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0ca3da1f5cde500800000000000000
+      internalID: 427215181454164144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 313
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584a905594662c190800000000000000
+      internalID: -7943674327582792571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 323
+        width: 130
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528c731f9a20c8690800000000000000
+      internalID: -7598695542361176027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 309
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d0228001ab89f00800000000000000
+      internalID: 1123852685047631122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 311
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f286d28baf494770800000000000000
+      internalID: 8595488961866400504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 78
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28faeade0cf4c8f0800000000000000
+      internalID: -521014516135561173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 60
+        width: 64
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba9bb8dfa6134420800000000000000
+      internalID: 2612957153316281018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 67
+        width: 126
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6139b8dc489d1b880800000000000000
+      internalID: -8596851049266179306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 60
+        width: 65
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7636fb8255967b9d0800000000000000
+      internalID: -2758620432264371353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 67
+        width: 124
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a6d47692f868ac0800000000000000
+      internalID: -3853235023179322736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 59
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f217704d901e99ef0800000000000000
+      internalID: -100802084310912721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 67
+        width: 123
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0483bdf0dc36224f0800000000000000
+      internalID: -855011246861502400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 61
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906b39e6ddc012ee0800000000000000
+      internalID: -1287733873268771319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 67
+        width: 123
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61756d22cbf6843c0800000000000000
+      internalID: -4375124184161429738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 61
+        width: 49
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2e3abfe6a104f00800000000000000
+      internalID: 1098907373048947398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 67
+        width: 123
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abeac65555522b0c0800000000000000
+      internalID: -4561542424137257286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 58
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d8cdf8368563b90800000000000000
+      internalID: -7262520164449743567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robotics arm integrated ice-spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 58
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e7154f933688e60800000000000000
+      internalID: 7964725041567989338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Robotics arm integrated ice-spritesheet_0: 8134729938897976087
+      Robotics arm integrated ice-spritesheet_1: 8648321546507902422
+      Robotics arm integrated ice-spritesheet_10: 5615778334169278791
+      Robotics arm integrated ice-spritesheet_11: -4783825537607855152
+      Robotics arm integrated ice-spritesheet_12: 7043608952694512676
+      Robotics arm integrated ice-spritesheet_13: -8381276588820453723
+      Robotics arm integrated ice-spritesheet_14: 3599134561295660677
+      Robotics arm integrated ice-spritesheet_15: 1072073697947864251
+      Robotics arm integrated ice-spritesheet_16: 6290593537933834256
+      Robotics arm integrated ice-spritesheet_17: 9202548008665884864
+      Robotics arm integrated ice-spritesheet_18: -4622100310170062028
+      Robotics arm integrated ice-spritesheet_19: 6184298947065057967
+      Robotics arm integrated ice-spritesheet_2: 3964806960401070541
+      Robotics arm integrated ice-spritesheet_20: -3432625455899162176
+      Robotics arm integrated ice-spritesheet_21: -494741981430084255
+      Robotics arm integrated ice-spritesheet_22: -9014738499383129646
+      Robotics arm integrated ice-spritesheet_23: 8698719642748825570
+      Robotics arm integrated ice-spritesheet_24: 5504623791413807783
+      Robotics arm integrated ice-spritesheet_25: 5250502357529775083
+      Robotics arm integrated ice-spritesheet_26: -5904244464248479450
+      Robotics arm integrated ice-spritesheet_27: 1185500337666214122
+      Robotics arm integrated ice-spritesheet_28: 2988180123779375105
+      Robotics arm integrated ice-spritesheet_29: -9002454007567039725
+      Robotics arm integrated ice-spritesheet_3: 4609678231043397869
+      Robotics arm integrated ice-spritesheet_30: -6167363795607490166
+      Robotics arm integrated ice-spritesheet_31: 4609495251187440997
+      Robotics arm integrated ice-spritesheet_32: 8950918441967944058
+      Robotics arm integrated ice-spritesheet_33: 3550758980121282064
+      Robotics arm integrated ice-spritesheet_34: 1459269559423887013
+      Robotics arm integrated ice-spritesheet_35: 4814489862377252999
+      Robotics arm integrated ice-spritesheet_36: -1355438521785982188
+      Robotics arm integrated ice-spritesheet_37: 427215181454164144
+      Robotics arm integrated ice-spritesheet_38: -7943674327582792571
+      Robotics arm integrated ice-spritesheet_39: -7598695542361176027
+      Robotics arm integrated ice-spritesheet_4: 8180453150316728819
+      Robotics arm integrated ice-spritesheet_40: 1123852685047631122
+      Robotics arm integrated ice-spritesheet_41: 8595488961866400504
+      Robotics arm integrated ice-spritesheet_42: -521014516135561173
+      Robotics arm integrated ice-spritesheet_43: 2612957153316281018
+      Robotics arm integrated ice-spritesheet_44: -8596851049266179306
+      Robotics arm integrated ice-spritesheet_45: -2758620432264371353
+      Robotics arm integrated ice-spritesheet_46: -3853235023179322736
+      Robotics arm integrated ice-spritesheet_47: -100802084310912721
+      Robotics arm integrated ice-spritesheet_48: -855011246861502400
+      Robotics arm integrated ice-spritesheet_49: -1287733873268771319
+      Robotics arm integrated ice-spritesheet_5: 8387315243928151017
+      Robotics arm integrated ice-spritesheet_50: -4375124184161429738
+      Robotics arm integrated ice-spritesheet_51: 1098907373048947398
+      Robotics arm integrated ice-spritesheet_52: -4561542424137257286
+      Robotics arm integrated ice-spritesheet_53: -7262520164449743567
+      Robotics arm integrated ice-spritesheet_54: 7964725041567989338
+      Robotics arm integrated ice-spritesheet_6: 3779996706007547723
+      Robotics arm integrated ice-spritesheet_7: -2308397071816145842
+      Robotics arm integrated ice-spritesheet_8: 2015649264773528147
+      Robotics arm integrated ice-spritesheet_9: -4058080574860829425
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

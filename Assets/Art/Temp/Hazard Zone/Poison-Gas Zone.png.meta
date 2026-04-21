@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 62a6922cd5abb1d42a65ee62b7b0e3df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8457049116583630160
+    second: Poison-Gas Zone_0
+  - first:
+      213: 59530055729218063
+    second: Poison-Gas Zone_1
+  - first:
+      213: 2679570338852357924
+    second: Poison-Gas Zone_2
+  - first:
+      213: -1443576944568582226
+    second: Poison-Gas Zone_3
+  - first:
+      213: 2801786265171547733
+    second: Poison-Gas Zone_4
+  - first:
+      213: -6847104982676241769
+    second: Poison-Gas Zone_5
+  - first:
+      213: 8281972980547935911
+    second: Poison-Gas Zone_6
+  - first:
+      213: 5794366640106304308
+    second: Poison-Gas Zone_7
+  - first:
+      213: -3875590679780627446
+    second: Poison-Gas Zone_8
+  - first:
+      213: -8973016805259293816
+    second: Poison-Gas Zone_9
+  - first:
+      213: -5382323570551517116
+    second: Poison-Gas Zone_10
+  - first:
+      213: 8239855309791523972
+    second: Poison-Gas Zone_11
+  - first:
+      213: 5765623595152759327
+    second: Poison-Gas Zone_12
+  - first:
+      213: 7489307609804669264
+    second: Poison-Gas Zone_13
+  - first:
+      213: -3994376511267803254
+    second: Poison-Gas Zone_14
+  - first:
+      213: -2788871432712498652
+    second: Poison-Gas Zone_15
+  - first:
+      213: 2524971238635728939
+    second: Poison-Gas Zone_16
+  - first:
+      213: -3605940350775367743
+    second: Poison-Gas Zone_17
+  - first:
+      213: -2835579816365290873
+    second: Poison-Gas Zone_18
+  - first:
+      213: -6264838514953925319
+    second: Poison-Gas Zone_19
+  - first:
+      213: -27632324979754105
+    second: Poison-Gas Zone_20
+  - first:
+      213: 2026628123157484196
+    second: Poison-Gas Zone_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Poison-Gas Zone_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 129
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba6006c2a682aa80800000000000000
+      internalID: -8457049116583630160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 159
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f020331354e73d000800000000000000
+      internalID: 59530055729218063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 108
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427c7f5b60fbf2520800000000000000
+      internalID: 2679570338852357924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 121
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafbb05da6267fbe0800000000000000
+      internalID: -1443576944568582226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 122
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5565e1083c1f1e620800000000000000
+      internalID: 2801786265171547733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_5
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 83
+        width: 76
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79286c7bb423af0a0800000000000000
+      internalID: -6847104982676241769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 122
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae51f8cb8a7fe270800000000000000
+      internalID: 8281972980547935911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 63
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433f8e162c9b96050800000000000000
+      internalID: 5794366640106304308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 66
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c6cdc7fc2273ac0800000000000000
+      internalID: -3875590679780627446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 91
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88bc8e6b1c0797380800000000000000
+      internalID: -8973016805259293816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_10
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 77
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4409017ba352e45b0800000000000000
+      internalID: -5382323570551517116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 87
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4847db46fb8d95270800000000000000
+      internalID: 8239855309791523972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_12
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 94
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ad0b9bc1c930050800000000000000
+      internalID: 5765623595152759327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 92
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0518900579d5fe760800000000000000
+      internalID: 7489307609804669264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_14
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fe7b2e9bf1198c0800000000000000
+      internalID: -3994376511267803254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 75
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422dfe04530fb49d0800000000000000
+      internalID: -2788871432712498652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_16
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 74
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20f5f2b6ff7a0320800000000000000
+      internalID: 2524971238635728939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_17
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 79
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c769c62b5025fdc0800000000000000
+      internalID: -3605940350775367743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_18
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 71
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a87493e2ff5a8d0800000000000000
+      internalID: -2835579816365290873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 73
+        width: 25
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d4cfc2092de09a0800000000000000
+      internalID: -6264838514953925319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_20
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 62
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b734dfb84dd9ff0800000000000000
+      internalID: -27632324979754105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison-Gas Zone_21
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 61
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a25e9c5a87002c10800000000000000
+      internalID: 2026628123157484196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Poison-Gas Zone_0: -8457049116583630160
+      Poison-Gas Zone_1: 59530055729218063
+      Poison-Gas Zone_10: -5382323570551517116
+      Poison-Gas Zone_11: 8239855309791523972
+      Poison-Gas Zone_12: 5765623595152759327
+      Poison-Gas Zone_13: 7489307609804669264
+      Poison-Gas Zone_14: -3994376511267803254
+      Poison-Gas Zone_15: -2788871432712498652
+      Poison-Gas Zone_16: 2524971238635728939
+      Poison-Gas Zone_17: -3605940350775367743
+      Poison-Gas Zone_18: -2835579816365290873
+      Poison-Gas Zone_19: -6264838514953925319
+      Poison-Gas Zone_2: 2679570338852357924
+      Poison-Gas Zone_20: -27632324979754105
+      Poison-Gas Zone_21: 2026628123157484196
+      Poison-Gas Zone_3: -1443576944568582226
+      Poison-Gas Zone_4: 2801786265171547733
+      Poison-Gas Zone_5: -6847104982676241769
+      Poison-Gas Zone_6: 8281972980547935911
+      Poison-Gas Zone_7: 5794366640106304308
+      Poison-Gas Zone_8: -3875590679780627446
+      Poison-Gas Zone_9: -8973016805259293816
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
