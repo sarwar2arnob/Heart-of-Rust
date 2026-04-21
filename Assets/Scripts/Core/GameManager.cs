@@ -1,29 +1,25 @@
+﻿// Core/GameManager.cs
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 using Singleton;
 
-public enum GameState { Boot, MainMenu, Playing, Paused }
+public enum GameState { Boot, MainMenu, Playing, Paused, GameOver } // 👈 added GameOver
 
 public class GameManager : SingletonPersistent<GameManager>
 {
     public GameState State { get; private set; }
-
-    // Events for UI scripts to listen to
     public event Action<GameState> OnStateChanged;
 
     private void Start()
     {
-        // If we started in the Boot scene, transition to Main Menu
         if (SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            LoadScene(1); // Load MainMenu
-        }
+            LoadScene(1);
     }
 
     private void OnEnable()
     {
-        // Subscribe to your existing InputHandler pause event!
         if (InputHandler.Instance != null)
             InputHandler.Instance.OnPause += TogglePause;
     }
@@ -37,33 +33,34 @@ public class GameManager : SingletonPersistent<GameManager>
     public void ChangeState(GameState newState)
     {
         State = newState;
-
-        // Handle Time Scale for pausing
-        if (State == GameState.Paused)
-            Time.timeScale = 0f;
-        else
-            Time.timeScale = 1f;
-
+        Time.timeScale = (State == GameState.Paused || State == GameState.GameOver) ? 0f : 1f;
         OnStateChanged?.Invoke(newState);
     }
 
     public void TogglePause()
     {
+        // Block pause input during game over or menus
+        if (State == GameState.GameOver || State == GameState.MainMenu) return;
+
         if (State == GameState.Playing)
             ChangeState(GameState.Paused);
         else if (State == GameState.Paused)
             ChangeState(GameState.Playing);
     }
 
-    // --- Scene Management ---
+    // 👇 NEW: called by HealthSystem via event
+    public void TriggerGameOver()
+    {
+        if (State == GameState.GameOver) return; // prevent double-trigger
+        ChangeState(GameState.GameOver);
+    }
 
     public void LoadScene(int buildIndex)
     {
-        // Async loading prevents WebGL freezing during scene transitions
-        Time.timeScale = 1f; // Always ensure time is running when loading
-        SceneManager.LoadSceneAsync(buildIndex).completed += (asyncOperation) =>
+        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync(buildIndex).completed += (_) =>
         {
-            if (buildIndex == 1 || buildIndex == 2) // MainMenu or LevelSelect
+            if (buildIndex == 1 || buildIndex == 2)
                 ChangeState(GameState.MainMenu);
             else
                 ChangeState(GameState.Playing);
@@ -72,8 +69,6 @@ public class GameManager : SingletonPersistent<GameManager>
 
     public void SoftResetLevel()
     {
-        // Reloads the current active scene
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        LoadScene(currentSceneIndex);
+        LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

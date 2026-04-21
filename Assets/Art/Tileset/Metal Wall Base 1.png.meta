@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9ade57b9cdceb3c4ba7bd6704b6ddae5
+guid: dced2b99cbc270149b386876a81af804
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6775584164509412503
-    second: Ice-Zone_0
+      213: -1381378156020528960
+    second: Metal Wall Base 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ice-Zone_0
+      name: Metal Wall Base 1_0
       rect:
         serializedVersion: 2
-        x: 86
-        y: 85
-        width: 455
-        height: 437
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96397a8d91a48f1a0800000000000000
-      internalID: -6775584164509412503
+      spriteID: 0c889edc2eb54dce0800000000000000
+      internalID: -1381378156020528960
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ice-Zone_0: -6775584164509412503
+      Metal Wall Base 1_0: -1381378156020528960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

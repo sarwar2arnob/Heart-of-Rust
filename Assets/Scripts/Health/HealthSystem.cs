@@ -84,19 +84,12 @@ public class HealthSystem : MonoBehaviour, IDamageable
     private void Die()
     {
         Debug.Log("Entity Died");
-
         OnDeath?.Invoke();
 
-        // Example behavior:
         if (player != null)
-        {
-            // Disable movement (optional)
             player.enabled = false;
-        }
 
-        // You can later:
-        // - Play animation
-        // - Trigger game over
-        // - Destroy(gameObject)
+        // 👇 Tell GameManager the player died
+        GameManager.Instance?.TriggerGameOver();
     }
 }

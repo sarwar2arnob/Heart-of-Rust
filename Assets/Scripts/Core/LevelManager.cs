@@ -1,20 +1,25 @@
+// Core/LevelManager.cs
+
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    [Header("Level Setup")]
     public string clueText;
+    public int nextLevelBuildIndex; // set this in the Inspector per-scene
 
-    void Start()
+    private void Start()
     {
-        FindFirstObjectByType<ClueManager>().ShowClue(clueText);
+        // Null-safe clue display
+        ClueManager clueManager = FindFirstObjectByType<ClueManager>();
+        if (clueManager != null && !string.IsNullOrEmpty(clueText))
+            clueManager.ShowClue(clueText);
     }
 
+    // Call this from a trigger, door, or puzzle-complete event
     public void CompleteLevel(int nextLevelBuildIndex)
     {
-        // Unlock the next level in the save file
         SaveManager.Instance.UnlockLevel(nextLevelBuildIndex);
-
-        // Tell GameManager to load it
         GameManager.Instance.LoadScene(nextLevelBuildIndex);
     }
 }
