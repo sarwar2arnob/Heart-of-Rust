@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: df8e304ef0037fd469abad3d2862d42e
+guid: 54c8e5dc3bfb8734abdd2a721160c517
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3221471418337181383
-    second: Scattered paper 2_0
+      213: -8973404873276914161
+    second: Recipe Page_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scattered paper 2_0
+      name: Recipe Page_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 49
-        width: 58
-        height: 48
+        x: 477
+        y: 313
+        width: 1102
+        height: 1418
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93140f720d80b43d0800000000000000
-      internalID: -3221471418337181383
+      spriteID: f0602969fcf087380800000000000000
+      internalID: -8973404873276914161
       vertices: []
       indices: 
       edges: []
@@ -177,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Scattered paper 2_0: -3221471418337181383
+      Recipe Page_0: -8973404873276914161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
