@@ -7,7 +7,6 @@ public class CraftingUI_Slots : MonoBehaviour
     [SerializeField] private CraftingSlotUI slot1;
     [SerializeField] private CraftingSlotUI slot2;
     [SerializeField] private CraftingSlotUI slot3;
-
     [SerializeField] private TMP_Text feedbackText;
 
     private CraftingSystem craftingSystem;
@@ -25,7 +24,6 @@ public class CraftingUI_Slots : MonoBehaviour
     public void Setup(InventorySystem inv)
     {
         inventory = inv;
-
         slot1.Setup(inv);
         slot2.Setup(inv);
         slot3.Setup(inv);
@@ -45,6 +43,11 @@ public class CraftingUI_Slots : MonoBehaviour
             feedbackText.text = "";
 
         gameObject.SetActive(true);
+    }
+
+    public void Close()
+    {
+        gameObject.SetActive(false);
     }
 
     public void AddItemToSlot(ItemData item)
@@ -67,7 +70,7 @@ public class CraftingUI_Slots : MonoBehaviour
 
         if (inputs.Count == 0)
         {
-            feedbackText.text = "Insert items!";
+            SetFeedback("Insert items!");
             return;
         }
 
@@ -75,28 +78,36 @@ public class CraftingUI_Slots : MonoBehaviour
 
         if (recipe == null)
         {
-            feedbackText.text = "Unknown combination...";
+            SetFeedback("Unknown combination...");
             return;
         }
 
         if (!craftingSystem.CanCraft(recipe, inventory))
         {
-            feedbackText.text = "Not enough materials!";
+            SetFeedback("Not enough materials!");
             return;
         }
 
-        craftingSystem.TryCraft(recipe, inventory);
+        bool success = craftingSystem.TryCraft(recipe, inventory);
 
-        feedbackText.text = "Crafted!";
-        ClearSlots();
+        if (success)
+        {
+            ClearSlots();
+            SetFeedback(""); // clear feedback — popup handles the result display
+
+            // Show the result popup with icon + name
+            CraftResultPopup.Instance?.Show(recipe);
+        }
+        else
+        {
+            SetFeedback("Craft failed!");
+        }
     }
 
     private void Add(CraftingSlotUI slot, List<ItemData> list)
     {
         for (int i = 0; i < slot.Count; i++)
-        {
             list.Add(slot.CurrentItem);
-        }
     }
 
     private void ClearSlots()
@@ -104,5 +115,11 @@ public class CraftingUI_Slots : MonoBehaviour
         slot1.Clear();
         slot2.Clear();
         slot3.Clear();
+    }
+
+    private void SetFeedback(string message)
+    {
+        if (feedbackText != null)
+            feedbackText.text = message;
     }
 }
