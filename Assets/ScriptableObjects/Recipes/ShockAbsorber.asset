@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2615fe787cc3e4140bfec40cb10bde3b, type: 3}
   m_Name: ShockAbsorber
   m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  recipeName: Shock Absorber
+  recipePageImage: {fileID: 8836944888766504146, guid: faa2f670dacfa6e499e607146986170c, type: 3}
+  resultIcon: {fileID: 8836944888766504146, guid: faa2f670dacfa6e499e607146986170c, type: 3}
   inputs:
   - item: {fileID: 11400000, guid: c159d85b10f84954a92bf5b526a76f01, type: 2}
     amount: 2
@@ -23,3 +26,4 @@ MonoBehaviour:
     type: 0
     module: {fileID: 11400000, guid: 8a5b7f02040a11c4e861a5367300b63f, type: 2}
     part: 2
+  unlockedByDefault: 0

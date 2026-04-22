@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2615fe787cc3e4140bfec40cb10bde3b, type: 3}
   m_Name: LegActuator_Recipe
   m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  recipeName: Leg Actuator
+  recipePageImage: {fileID: 7049575020576108313, guid: 26575a26e9c812f47a47980f1b7d950d, type: 3}
+  resultIcon: {fileID: 7049575020576108313, guid: 26575a26e9c812f47a47980f1b7d950d, type: 3}
   inputs:
   - item: {fileID: 11400000, guid: 71b7e2803f8692c4aba31182bd351df9, type: 2}
     amount: 3

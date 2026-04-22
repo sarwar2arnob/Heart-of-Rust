@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2615fe787cc3e4140bfec40cb10bde3b, type: 3}
   m_Name: ManipulatorArm_Recipe
   m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  recipeName: Manipulator Arm
+  recipePageImage: {fileID: -3981974846487824350, guid: b5788f930746cdf4dbb2b6fc466bb203, type: 3}
+  resultIcon: {fileID: -3981974846487824350, guid: b5788f930746cdf4dbb2b6fc466bb203, type: 3}
   inputs:
   - item: {fileID: 11400000, guid: 71b7e2803f8692c4aba31182bd351df9, type: 2}
     amount: 1
