@@ -6,7 +6,7 @@ public class CraftingUI : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private GameObject panel;
-    [SerializeField] private Transform recipeContainer;
+    private Transform recipeContainer;
     [SerializeField] private GameObject recipeButtonPrefab;
 
     private CraftingSystem currentCraftingSystem;
