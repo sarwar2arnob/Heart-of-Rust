@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Singleton;
 
@@ -46,10 +46,11 @@ public class ParticleManager : SingletonPersistent<ParticleManager>
     private void BuildDictionary()
     {
         particleMap.Clear();
+        if (particleEntries == null) return;
         foreach (var entry in particleEntries)
         {
             if (!particleMap.ContainsKey(entry.type))
-                particleMap[entry.type] = entry.prefab;
+                particleMap[entry.type] = entry.prefab; // 👈 was just 'entry'
             else
                 Debug.LogWarning($"[ParticleManager] Duplicate ParticleType: {entry.type}");
         }

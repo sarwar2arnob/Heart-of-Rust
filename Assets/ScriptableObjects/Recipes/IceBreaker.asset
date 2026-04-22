@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2615fe787cc3e4140bfec40cb10bde3b, type: 3}
   m_Name: IceBreaker
   m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  recipeName: Ice Breaker
+  recipePageImage: {fileID: -7309714842259199856, guid: 1dba3bb931625d9498b0d4412b1eda85, type: 3}
+  resultIcon: {fileID: -7309714842259199856, guid: 1dba3bb931625d9498b0d4412b1eda85, type: 3}
   inputs:
   - item: {fileID: 11400000, guid: c159d85b10f84954a92bf5b526a76f01, type: 2}
     amount: 2
@@ -23,3 +26,4 @@ MonoBehaviour:
     type: 0
     module: {fileID: 11400000, guid: e596cd7343c735942b920c748c63ccd1, type: 2}
     part: 2
+  unlockedByDefault: 0

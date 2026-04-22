@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2615fe787cc3e4140bfec40cb10bde3b, type: 3}
   m_Name: FilterCore
   m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  recipeName: FilterCore
+  recipePageImage: {fileID: -4288822040695487805, guid: 3c62afd6043984048a4ec8c750827ed3, type: 3}
+  resultIcon: {fileID: -4288822040695487805, guid: 3c62afd6043984048a4ec8c750827ed3, type: 3}
   inputs:
   - item: {fileID: 11400000, guid: c159d85b10f84954a92bf5b526a76f01, type: 2}
     amount: 1

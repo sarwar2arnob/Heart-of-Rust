@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b5788f930746cdf4dbb2b6fc466bb203
+guid: bd3ff2de4fc70a64794091c4d5a729cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3981974846487824350
-    second: Manipulator-Arm Icon_0
+      213: -749737139742048441
+    second: Basic Floating TextBox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manipulator-Arm Icon_0
+      name: Basic Floating TextBox_0
       rect:
         serializedVersion: 2
-        x: 365
-        y: 329
-        width: 1298
-        height: 1090
+        x: 119
+        y: 311
+        width: 788
+        height: 405
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2287d8a79fe2db8c0800000000000000
-      internalID: -3981974846487824350
+      spriteID: 74ff1ce2b066895f0800000000000000
+      internalID: -749737139742048441
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Manipulator-Arm Icon_0: -3981974846487824350
+      Basic Floating TextBox_0: -749737139742048441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

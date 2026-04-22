@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b5788f930746cdf4dbb2b6fc466bb203
+guid: 26575a26e9c812f47a47980f1b7d950d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3981974846487824350
-    second: Manipulator-Arm Icon_0
+      213: 2885213743760499792
+    second: Leg_Actuator_Icon_0
+  - first:
+      213: 7049575020576108313
+    second: Leg_Actuator_Icon_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -152,13 +155,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manipulator-Arm Icon_0
+      name: Leg_Actuator_Icon_0
       rect:
         serializedVersion: 2
-        x: 365
-        y: 329
-        width: 1298
-        height: 1090
+        x: 341
+        y: 131
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +170,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2287d8a79fe2db8c0800000000000000
-      internalID: -3981974846487824350
+      spriteID: 0546be90d965a0820800000000000000
+      internalID: 2885213743760499792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leg_Actuator_Icon_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 66
+        width: 1349
+        height: 1857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fe7e6812f15d160800000000000000
+      internalID: 7049575020576108313
       vertices: []
       indices: 
       edges: []
@@ -187,7 +212,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Manipulator-Arm Icon_0: -3981974846487824350
+      Leg_Actuator_Icon_0: 2885213743760499792
+      Leg_Actuator_Icon_1: 7049575020576108313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

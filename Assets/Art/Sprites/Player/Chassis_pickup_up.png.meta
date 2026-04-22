@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 826d4bf5c3cc40f4c95dbf06187f03e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3244540086278404120
+    second: Chassis_pickup_up_0
+  - first:
+      213: 4151523313628673927
+    second: Chassis_pickup_up_1
+  - first:
+      213: -8269011160909646881
+    second: Chassis_pickup_up_2
+  - first:
+      213: -627944639747789968
+    second: Chassis_pickup_up_3
+  - first:
+      213: -5982801330653456225
+    second: Chassis_pickup_up_4
+  - first:
+      213: 3023306453249903568
+    second: Chassis_pickup_up_5
+  - first:
+      213: -2730633181353487036
+    second: Chassis_pickup_up_6
+  - first:
+      213: 8818160431690631495
+    second: Chassis_pickup_up_7
+  - first:
+      213: -8483906301954835133
+    second: Chassis_pickup_up_8
+  - first:
+      213: 1316991897597579494
+    second: Chassis_pickup_up_9
+  - first:
+      213: -6164910416277775581
+    second: Chassis_pickup_up_10
+  - first:
+      213: 8304943693628256151
+    second: Chassis_pickup_up_11
+  - first:
+      213: 1594867011691495669
+    second: Chassis_pickup_up_12
+  - first:
+      213: -3728263918018121155
+    second: Chassis_pickup_up_13
+  - first:
+      213: 9005758092346595922
+    second: Chassis_pickup_up_14
+  - first:
+      213: -8303620240210375642
+    second: Chassis_pickup_up_15
+  - first:
+      213: 3769568775154200628
+    second: Chassis_pickup_up_16
+  - first:
+      213: 8665273613923034274
+    second: Chassis_pickup_up_17
+  - first:
+      213: 4858391423084106845
+    second: Chassis_pickup_up_18
+  - first:
+      213: -6963176404485527427
+    second: Chassis_pickup_up_19
+  - first:
+      213: 7333329225235854975
+    second: Chassis_pickup_up_20
+  - first:
+      213: -3154551634405075326
+    second: Chassis_pickup_up_21
+  - first:
+      213: -3190765403730149540
+    second: Chassis_pickup_up_22
+  - first:
+      213: 4362728402201317081
+    second: Chassis_pickup_up_23
+  - first:
+      213: -1447483783778516904
+    second: Chassis_pickup_up_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chassis_pickup_up_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1086
+        width: 86
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818b326a40ce60d20800000000000000
+      internalID: 3244540086278404120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1086
+        width: 82
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787f691457c2d9930800000000000000
+      internalID: 4151523313628673927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_2
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1086
+        width: 88
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd37d3609229e3d80800000000000000
+      internalID: -8269011160909646881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_3
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1086
+        width: 82
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07be8395da71947f0800000000000000
+      internalID: -627944639747789968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_4
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1086
+        width: 87
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f989aa453e1d8fca0800000000000000
+      internalID: -5982801330653456225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 830
+        width: 87
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db4b197331f4f920800000000000000
+      internalID: 3023306453249903568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_6
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 830
+        width: 104
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445d78dc697da1ad0800000000000000
+      internalID: -2730633181353487036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_7
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 830
+        width: 113
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74943572136606a70800000000000000
+      internalID: 8818160431690631495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_8
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 830
+        width: 116
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34db8440b2c134a80800000000000000
+      internalID: -8483906301954835133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_9
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 830
+        width: 119
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e01f543725e64210800000000000000
+      internalID: 1316991897597579494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 574
+        width: 123
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b58a5b3a6d17aa0800000000000000
+      internalID: -6164910416277775581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_11
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 574
+        width: 123
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f2552b946114370800000000000000
+      internalID: 8304943693628256151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_12
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 574
+        width: 124
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f04cdfd81b122610800000000000000
+      internalID: 1594867011691495669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_13
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 574
+        width: 124
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32bf9148bb824cc0800000000000000
+      internalID: -3728263918018121155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_14
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 574
+        width: 123
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a1b6b3541eafc70800000000000000
+      internalID: 9005758092346595922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_15
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 318
+        width: 124
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c4480d26d93cc80800000000000000
+      internalID: -8303620240210375642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_16
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 318
+        width: 116
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 430787734d2305430800000000000000
+      internalID: 3769568775154200628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_17
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 318
+        width: 107
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4a277f07c314870800000000000000
+      internalID: 8665273613923034274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_18
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 318
+        width: 105
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d549bb822497c6340800000000000000
+      internalID: 4858391423084106845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_19
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 318
+        width: 88
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78224ed3f3dd5f90800000000000000
+      internalID: -6963176404485527427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_20
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 62
+        width: 89
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f767c23a31835c560800000000000000
+      internalID: 7333329225235854975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 62
+        width: 87
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28658a58008c834d0800000000000000
+      internalID: -3154551634405075326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_22
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 62
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ffe0d45cf18b3d0800000000000000
+      internalID: -3190765403730149540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_23
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 62
+        width: 85
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de87b8fd568b8c30800000000000000
+      internalID: 4362728402201317081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chassis_pickup_up_24
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 62
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8504eb1fa2189ebe0800000000000000
+      internalID: -1447483783778516904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chassis_pickup_up_0: 3244540086278404120
+      Chassis_pickup_up_1: 4151523313628673927
+      Chassis_pickup_up_10: -6164910416277775581
+      Chassis_pickup_up_11: 8304943693628256151
+      Chassis_pickup_up_12: 1594867011691495669
+      Chassis_pickup_up_13: -3728263918018121155
+      Chassis_pickup_up_14: 9005758092346595922
+      Chassis_pickup_up_15: -8303620240210375642
+      Chassis_pickup_up_16: 3769568775154200628
+      Chassis_pickup_up_17: 8665273613923034274
+      Chassis_pickup_up_18: 4858391423084106845
+      Chassis_pickup_up_19: -6963176404485527427
+      Chassis_pickup_up_2: -8269011160909646881
+      Chassis_pickup_up_20: 7333329225235854975
+      Chassis_pickup_up_21: -3154551634405075326
+      Chassis_pickup_up_22: -3190765403730149540
+      Chassis_pickup_up_23: 4362728402201317081
+      Chassis_pickup_up_24: -1447483783778516904
+      Chassis_pickup_up_3: -627944639747789968
+      Chassis_pickup_up_4: -5982801330653456225
+      Chassis_pickup_up_5: 3023306453249903568
+      Chassis_pickup_up_6: -2730633181353487036
+      Chassis_pickup_up_7: 8818160431690631495
+      Chassis_pickup_up_8: -8483906301954835133
+      Chassis_pickup_up_9: 1316991897597579494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

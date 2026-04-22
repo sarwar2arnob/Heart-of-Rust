@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Singleton;
 
@@ -61,6 +61,7 @@ public class AudioManager : SingletonPersistent<AudioManager>
     private void BuildDictionary()
     {
         soundMap.Clear();
+        if (soundEntries == null) return; // 👈 guard
         foreach (var entry in soundEntries)
         {
             if (!soundMap.ContainsKey(entry.type))

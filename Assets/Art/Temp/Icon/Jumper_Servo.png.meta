@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: b5788f930746cdf4dbb2b6fc466bb203
+guid: a3e352843a284764e8797efecd629c73
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3981974846487824350
-    second: Manipulator-Arm Icon_0
+      213: 3241666241826913284
+    second: Jumper_Servo_0
+  - first:
+      213: 1605712560104647984
+    second: Jumper_Servo_1
+  - first:
+      213: -1202518626584465799
+    second: Jumper_Servo_2
+  - first:
+      213: -4367126793448657461
+    second: Jumper_Servo_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +161,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manipulator-Arm Icon_0
+      name: Jumper_Servo_0
       rect:
         serializedVersion: 2
-        x: 365
-        y: 329
-        width: 1298
-        height: 1090
+        x: 261
+        y: 489
+        width: 42
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +176,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2287d8a79fe2db8c0800000000000000
-      internalID: -3981974846487824350
+      spriteID: 40cf7789546bcfc20800000000000000
+      internalID: 3241666241826913284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumper_Servo_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 357
+        width: 1370
+        height: 1178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dab64e013a84610800000000000000
+      internalID: 1605712560104647984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumper_Servo_2
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 497
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e64aa2eabcf4fe0800000000000000
+      internalID: -1202518626584465799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumper_Servo_3
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 333
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcde663c159d463c0800000000000000
+      internalID: -4367126793448657461
       vertices: []
       indices: 
       edges: []
@@ -187,7 +262,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Manipulator-Arm Icon_0: -3981974846487824350
+      Jumper_Servo_0: 3241666241826913284
+      Jumper_Servo_1: 1605712560104647984
+      Jumper_Servo_2: -1202518626584465799
+      Jumper_Servo_3: -4367126793448657461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

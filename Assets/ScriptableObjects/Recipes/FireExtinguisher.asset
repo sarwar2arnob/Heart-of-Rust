@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2615fe787cc3e4140bfec40cb10bde3b, type: 3}
   m_Name: FireExtinguisher
   m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  recipeName: Fire Extinguisher
+  recipePageImage: {fileID: 7599494933604261470, guid: 7241e757631b93b4591b701c69c1cad4, type: 3}
+  resultIcon: {fileID: 7599494933604261470, guid: 7241e757631b93b4591b701c69c1cad4, type: 3}
   inputs:
   - item: {fileID: 11400000, guid: c159d85b10f84954a92bf5b526a76f01, type: 2}
     amount: 1
@@ -23,3 +26,4 @@ MonoBehaviour:
     type: 0
     module: {fileID: 11400000, guid: f50bb5d422f57ae4fa7f95c34df2951e, type: 2}
     part: 2
+  unlockedByDefault: 0
