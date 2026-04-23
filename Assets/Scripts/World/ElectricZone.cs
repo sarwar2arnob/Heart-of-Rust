@@ -4,19 +4,24 @@ public class ElectricZone : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D col)
     {
-        if (col.TryGetComponent(out ModuleAbilitySystem abilitySystem))
+        // Check if it's the player and they have the ShockAbsorber equipped
+        if (col.TryGetComponent(out PlayerEquipment equipment))
         {
-            if (!abilitySystem.IsShockImmune())
+            if (equipment.equippedModule != null && equipment.equippedModule.type == ModuleType.ShockAbsorber)
             {
-                if (col.TryGetComponent(out IDamageable damageable))
-                {
-                    damageable.TakeDamage(new DamageData(
-                        10f,
-                        DamageType.Electric,
-                        transform.position
-                    ));
-                }
+                // They are passively immune! Stop running this code.
+                return;
             }
+        }
+
+        // If no module is found, deal damage
+        if (col.TryGetComponent(out IDamageable damageable))
+        {
+            damageable.TakeDamage(new DamageData(
+                10f,
+                DamageType.Electric,
+                transform.position
+            ));
         }
     }
 }
