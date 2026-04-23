@@ -13,6 +13,7 @@ public class PlayerAnimationManager : MonoBehaviour
     private readonly int speedHash = Animator.StringToHash("Speed");
     private readonly int dashTriggerHash = Animator.StringToHash("Dash");
     private readonly int interactTriggerHash = Animator.StringToHash("Interact");
+    private readonly int useModuleTriggerHash = Animator.StringToHash("UseModule");
 
     // Track the last facing direction so we don't snap to default when stopping
     private Vector2 lastFacingDirection = Vector2.down;
@@ -58,6 +59,11 @@ public class PlayerAnimationManager : MonoBehaviour
     public void TriggerInteract()
     {
         anim.SetTrigger(interactTriggerHash);
+    }
+
+    public void TriggerUseModule()
+    {
+        anim.SetTrigger(useModuleTriggerHash);
     }
 
     // Optional: useful if your chassis gets damaged and needs to flash red

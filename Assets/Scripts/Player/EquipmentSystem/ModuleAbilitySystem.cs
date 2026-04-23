@@ -24,6 +24,9 @@ public class ModuleAbilitySystem : MonoBehaviour
             return;
         }
 
+        // 👇 Trigger the directional animation in the Blend Tree
+        playerController.AnimManager.TriggerUseModule();
+
         switch (module.type)
         {
             case ModuleType.IceBreaker:
@@ -53,7 +56,7 @@ public class ModuleAbilitySystem : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            IceBlock ice = hit.GetComponentInParent<IceBlock>(); // 🔥 FIX
+            IceBlock ice = hit.GetComponentInParent<IceBlock>();
 
             if (ice != null)
             {
