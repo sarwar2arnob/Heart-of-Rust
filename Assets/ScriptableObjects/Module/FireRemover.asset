@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: FireRemover
   m_EditorClassIdentifier: Assembly-CSharp::ModuleData
   type: 3
+  icon: {fileID: 7599494933604261470, guid: 7241e757631b93b4591b701c69c1cad4, type: 3}

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: ShockAbsorver
   m_EditorClassIdentifier: Assembly-CSharp::ModuleData
   type: 4
+  icon: {fileID: 8836944888766504146, guid: faa2f670dacfa6e499e607146986170c, type: 3}

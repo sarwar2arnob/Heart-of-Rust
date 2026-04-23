@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Icebreaker
   m_EditorClassIdentifier: Assembly-CSharp::ModuleData
   type: 2
+  icon: {fileID: -7309714842259199856, guid: 1dba3bb931625d9498b0d4412b1eda85, type: 3}

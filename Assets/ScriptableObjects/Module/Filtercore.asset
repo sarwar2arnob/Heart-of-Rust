@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Filtercore
   m_EditorClassIdentifier: Assembly-CSharp::ModuleData
   type: 1
+  icon: {fileID: -4288822040695487805, guid: 3c62afd6043984048a4ec8c750827ed3, type: 3}
