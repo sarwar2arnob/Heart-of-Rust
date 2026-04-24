@@ -8,7 +8,6 @@ public class PlayerEquipment : MonoBehaviour
     private CraftingSystem craftingSystem;
     [Header("Debug / Testing")]
     public bool unlockAllOnStart = false;
-
     private InputHandler inputHandler;
 
 
@@ -23,6 +22,11 @@ public class PlayerEquipment : MonoBehaviour
     private List<ModuleData> unlockedModules = new List<ModuleData>();
     private int currentModuleIndex = -1;
 
+
+    private void Awake()
+    {
+        inputHandler = GetComponent<InputHandler>();
+    }
     private void Start()
     {
         if (unlockAllOnStart)
@@ -44,25 +48,23 @@ public class PlayerEquipment : MonoBehaviour
         DebugCurrentState();
 
         craftingSystem = FindAnyObjectByType<CraftingSystem>();
+        if (inputHandler != null)
+        {
+            inputHandler.OnSwapModule += CycleModule;
+        }
+        else
+        {
+            Debug.LogError("[PlayerEquipment] InputHandler missing!");
+        }
         if (craftingSystem != null)
             craftingSystem.OnCraftSuccess += ApplyCraftResult;
         else
             Debug.LogError("[PlayerEquipment] CraftingSystem not found!");
 
-        inputHandler = GetComponent<InputHandler>();
+
     }
 
-    private void OnEnable()
-    {
-        if (inputHandler != null)
-            inputHandler.OnSwapModule += CycleModule;
-    }
-
-    private void OnDisable()
-    {
-        if (inputHandler != null)
-            inputHandler.OnSwapModule -= CycleModule;
-    }
+    
 
     // =========================
     // 🔥 ENTRY FROM CRAFTING
@@ -120,6 +122,7 @@ public class PlayerEquipment : MonoBehaviour
         if (!unlockedModules.Contains(newModule))
         {
             unlockedModules.Add(newModule);
+            Debug.Log($"Unlocked Module Count: {unlockedModules.Count}");
             Debug.Log($"Module Unlocked: {newModule.type}");
 
             // Auto-equip first module
@@ -142,6 +145,7 @@ public class PlayerEquipment : MonoBehaviour
 
     private void CycleModule(float direction)
     {
+        Debug.Log($"CycleModule called: {direction}");
         // 🛑 Prevent rapid double-trigger
         if (Time.time - lastSwapTime < swapCooldown)
             return;

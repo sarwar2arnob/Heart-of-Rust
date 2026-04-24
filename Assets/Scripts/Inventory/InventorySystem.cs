@@ -1,47 +1,79 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class InventorySystem : MonoBehaviour
 {
-    public int maxSlots = 10;
+    private Dictionary<ItemData, int> items =
+        new Dictionary<ItemData, int>();
 
-    private Dictionary<ItemData, int> items = new();
-
-    // 🔥 Event for UI updates
     public event Action OnInventoryChanged;
 
-    public void Add(ItemData item)
+    public void Add(ItemData item, int amount = 1)
     {
-        if (!items.ContainsKey(item))
-            items[item] = 0;
+        if (item == null)
+            return;
 
-        items[item]++;
+        if (items.ContainsKey(item))
+            items[item] += amount;
+        else
+            items[item] = amount;
 
         OnInventoryChanged?.Invoke();
     }
 
-    public bool Has(ItemData item, int amount)
+    public bool Remove(ItemData item, int amount = 1)
     {
-        return items.ContainsKey(item) && items[item] >= amount;
-    }
+        if (item == null)
+            return false;
 
-    public void Remove(ItemData item, int amount)
-    {
-        if (!Has(item, amount)) return;
+        if (!items.ContainsKey(item))
+            return false;
+
+        if (items[item] < amount)
+            return false;
 
         items[item] -= amount;
 
-        // Optional: remove empty entries
         if (items[item] <= 0)
             items.Remove(item);
 
         OnInventoryChanged?.Invoke();
+
+        return true;
     }
 
-    // 🔥 UI reads from this
+    public bool Has(ItemData item, int amount = 1)
+    {
+        if (item == null)
+            return false;
+
+        if (!items.TryGetValue(item, out int count))
+            return false;
+
+        return count >= amount;
+    }
+
+    public int GetCount(ItemData item)
+    {
+        if (item == null)
+            return 0;
+
+        if (items.TryGetValue(item, out int count))
+            return count;
+
+        return 0;
+    }
+
     public Dictionary<ItemData, int> GetAllItems()
     {
         return items;
+    }
+
+    public void Clear()
+    {
+        items.Clear();
+
+        OnInventoryChanged?.Invoke();
     }
 }

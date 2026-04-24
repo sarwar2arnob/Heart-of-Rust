@@ -42,21 +42,28 @@ public class CraftingSlotUI : MonoBehaviour
 
     private void OnAdd()
     {
-        if (CurrentItem == null) return;
+        if (CurrentItem == null)
+            return;
 
-        // Check if the player has enough items
-        if (!inventory.Has(CurrentItem, Count + 1))
+        if (inventory == null)
+            return;
+
+        int owned = inventory.GetCount(CurrentItem);
+
+        if (Count >= owned)
         {
-            Debug.Log($"[CraftingSlotUI] Cannot add more {CurrentItem.itemName}. Not enough in inventory!");
+            Debug.Log($"Not enough {CurrentItem.itemName}");
 
-            // Optional: Play your fail sound here!
             if (AudioManager.Instance != null)
+            {
                 AudioManager.Instance.Play(SoundType.CraftFail);
+            }
 
             return;
         }
 
         Count++;
+
         UpdateUI();
     }
     private void OnRemove()
