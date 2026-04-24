@@ -14,7 +14,7 @@ public class InputHandler : SingletonPersistent<InputHandler>
     public event Action OnCraftingOpen;
     public event Action<float> OnSwapModule;
     public event Action OnPause;
-   
+
     protected override void Awake()
     {
         base.Awake();

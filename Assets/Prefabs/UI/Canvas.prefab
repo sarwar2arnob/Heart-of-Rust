@@ -35,9 +35,9 @@ RectTransform:
   - {fileID: 4921982027076733585}
   - {fileID: 7847266541710341627}
   - {fileID: 2803520554051336471}
-  - {fileID: 4465076818751714105}
   - {fileID: 5889034729664472637}
   - {fileID: 7170090753413044573}
+  - {fileID: 4465076818751714105}
   m_Father: {fileID: 1733790240465759441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4080,7 +4080,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5856807745188408832}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6322677691417778107}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6129854514460347368
 GameObject:
   m_ObjectHideFlags: 0
@@ -4716,7 +4728,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6853629075453821187}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
