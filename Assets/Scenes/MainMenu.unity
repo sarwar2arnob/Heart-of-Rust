@@ -1793,7 +1793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -107.47998, y: -42.7}
+  m_AnchoredPosition: {x: -107.47998, y: -42.69995}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246382490
@@ -2058,7 +2058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuManager
   mainMenuPanel: {fileID: 961274497}
   levelSelectPanel: {fileID: 604238990}
-  continueButton: {fileID: 314940416}
+  continueButton: {fileID: 0}
   levelSelectButton: {fileID: 1667324640}
   backButton: {fileID: 81617125}
   levelButtonPrefab: {fileID: 1676355638547087893, guid: fd1e5d8a896b3534bb9ce76c42d23646, type: 3}
@@ -2345,7 +2345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -107.47998, y: -42.7}
+  m_AnchoredPosition: {x: -107.47998, y: -42.69995}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579222476
