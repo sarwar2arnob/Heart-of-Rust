@@ -14,7 +14,7 @@ public class DashState : PlayerState
         dashStartTime = Time.time;
 
         // Lock in the direction the player was holding when they pressed Dash
-        dashDirection = InputHandler.Instance.MoveDirection.normalized;
+        dashDirection = player.GetComponent<InputHandler>().MoveDirection.normalized;
 
         // Apply the immediate burst of speed
         player.rb.linearVelocity = dashDirection * player.dashSpeed;
@@ -31,7 +31,7 @@ public class DashState : PlayerState
         if (Time.time >= dashStartTime + player.dashDuration)
         {
             // Transition back to Idle or Walk based on current input
-            if (InputHandler.Instance.MoveDirection.sqrMagnitude > 0.01f)
+            if (player.GetComponent<InputHandler>().MoveDirection.sqrMagnitude > 0.01f)
             {
                 stateMachine.ChangeState(player.WalkState);
             }

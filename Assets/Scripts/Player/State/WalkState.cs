@@ -7,9 +7,9 @@ public class WalkState : PlayerState
     {
         base.LogicUpdate();
 
-        animManager.UpdateMovementAnimation(InputHandler.Instance.MoveDirection);
+        animManager.UpdateMovementAnimation(player.GetComponent<InputHandler>().MoveDirection);
 
-        if (InputHandler.Instance.MoveDirection.sqrMagnitude <= 0.01f)
+        if (player.GetComponent<InputHandler>().MoveDirection.sqrMagnitude <= 0.01f)
         {
             stateMachine.ChangeState(player.IdleState);
         }

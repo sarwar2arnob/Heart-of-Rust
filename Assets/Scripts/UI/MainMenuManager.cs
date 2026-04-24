@@ -1,92 +1,73 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Required for TextMeshPro
 
 public class MainMenuManager : MonoBehaviour
 {
-    [Header("UI Panels")]
+    [Header("Panels")]
     [SerializeField] private GameObject mainMenuPanel;
-    [SerializeField] private GameObject levelSelectPanel;
+    [SerializeField] private GameObject gameplayUI;
 
-    [Header("Main Menu Buttons")]
+    [Header("Buttons")]
+    [SerializeField] private Button startButton;
     [SerializeField] private Button continueButton;
-    [SerializeField] private Button levelSelectButton;
+    [SerializeField] private Button quitButton;
 
-    [Header("Level Select Setup")]
-    [SerializeField] private Button backButton;
-    [SerializeField] private GameObject levelButtonPrefab;  // The button we will spawn
-    [SerializeField] private Transform levelGridContainer;  // The UI Panel with the GridLayoutGroup
-
-    [Header("Configuration")]
-    [SerializeField] private int totalLevels = 12;
-    [SerializeField] private int levelSceneOffset = 1;
+    [Header("Gameplay Objects")]
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject levelRoot;
 
     private void Start()
     {
-        continueButton.onClick.AddListener(OnContinueClicked);
-        levelSelectButton.onClick.AddListener(OnLevelSelectClicked);
-        backButton.onClick.AddListener(OnBackClicked);
+        startButton.onClick.AddListener(StartNewGame);
+        continueButton.onClick.AddListener(ContinueGame);
+        quitButton.onClick.AddListener(QuitGame);
 
-        SetupLevelGrid();
-        ShowPanel(mainMenuPanel);
+        ShowMainMenu();
     }
 
-    private void SetupLevelGrid()
+    private void ShowMainMenu()
     {
-        int highestUnlocked = SaveManager.Instance.CurrentData.highestUnlockedLevel;
+        mainMenuPanel.SetActive(true);
 
-        // Dynamically spawn all 12 buttons
-        for (int i = 0; i < totalLevels; i++)
-        {
-            int levelNumber = i + 1;
+        if (gameplayUI != null)
+            gameplayUI.SetActive(false);
 
-            // 1. Spawn the button inside the grid container
-            GameObject newButtonObj = Instantiate(levelButtonPrefab, levelGridContainer);
-            Button buttonComponent = newButtonObj.GetComponent<Button>();
+        if (player != null)
+            player.SetActive(false);
 
-            // 2. Set the text to the level number
-            TMP_Text buttonText = newButtonObj.GetComponentInChildren<TMP_Text>();
-            if (buttonText != null)
-            {
-                buttonText.text = levelNumber.ToString();
-            }
+        if (levelRoot != null)
+            levelRoot.SetActive(false);
 
-            // 3. Apply locking logic
-            if (levelNumber <= highestUnlocked)
-            {
-                // Unlocked
-                buttonComponent.interactable = true;
-                int sceneToLoad = levelNumber + levelSceneOffset;
-                buttonComponent.onClick.AddListener(() => GameManager.Instance.LoadScene(sceneToLoad));
-            }
-            else
-            {
-                // Locked
-                buttonComponent.interactable = false;
-            }
-        }
+        GameManager.Instance.ChangeState(GameState.MainMenu);
     }
 
-    private void OnContinueClicked()
-    {
-        int highestUnlocked = SaveManager.Instance.CurrentData.highestUnlockedLevel;
-        GameManager.Instance.LoadScene(highestUnlocked + levelSceneOffset);
-    }
-
-    private void OnLevelSelectClicked()
-    {
-        ShowPanel(levelSelectPanel);
-    }
-
-    private void OnBackClicked()
-    {
-        ShowPanel(mainMenuPanel);
-    }
-
-    private void ShowPanel(GameObject panelToShow)
+    private void StartNewGame()
     {
         mainMenuPanel.SetActive(false);
-        levelSelectPanel.SetActive(false);
-        panelToShow.SetActive(true);
+
+        if (gameplayUI != null)
+            gameplayUI.SetActive(true);
+
+        if (player != null)
+            player.SetActive(true);
+
+        if (levelRoot != null)
+            levelRoot.SetActive(true);
+
+        GameManager.Instance.ChangeState(GameState.Playing);
+    }
+
+    private void ContinueGame()
+    {
+        StartNewGame();
+    }
+
+    private void QuitGame()
+    {
+        Application.Quit();
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

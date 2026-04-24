@@ -24,7 +24,7 @@ public class HurtState : PlayerState
 
         if (Time.time >= enterTime + hurtDuration)
         {
-            if (InputHandler.Instance.MoveDirection.sqrMagnitude > 0.01f)
+            if (player.GetComponent<InputHandler>().MoveDirection.sqrMagnitude > 0.01f)
                 stateMachine.ChangeState(player.WalkState);
             else
                 stateMachine.ChangeState(player.IdleState);

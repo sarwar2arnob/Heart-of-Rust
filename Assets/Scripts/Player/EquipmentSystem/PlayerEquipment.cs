@@ -9,6 +9,8 @@ public class PlayerEquipment : MonoBehaviour
     [Header("Debug / Testing")]
     public bool unlockAllOnStart = false;
 
+    private InputHandler inputHandler;
+
 
     [Header("Permanent Parts")]
     public bool canMove { get; private set; }
@@ -46,18 +48,20 @@ public class PlayerEquipment : MonoBehaviour
             craftingSystem.OnCraftSuccess += ApplyCraftResult;
         else
             Debug.LogError("[PlayerEquipment] CraftingSystem not found!");
+
+        inputHandler = GetComponent<InputHandler>();
     }
 
     private void OnEnable()
     {
-        if (InputHandler.Instance != null)
-            InputHandler.Instance.OnSwapModule += CycleModule;
+        if (inputHandler != null)
+            inputHandler.OnSwapModule += CycleModule;
     }
 
     private void OnDisable()
     {
-        if (InputHandler.Instance != null)
-            InputHandler.Instance.OnSwapModule -= CycleModule;
+        if (inputHandler != null)
+            inputHandler.OnSwapModule -= CycleModule;
     }
 
     // =========================

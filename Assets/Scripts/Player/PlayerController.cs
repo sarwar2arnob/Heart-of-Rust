@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public PlayerAnimationManager AnimManager { get; private set; }
     public PlayerStateMachine StateMachine { get; private set; }
 
+    private InputHandler inputHandler;
+
     // ===== TOP-DOWN STATES =====
     public IdleState IdleState { get; private set; }
     public WalkState WalkState { get; private set; }
@@ -38,6 +40,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         equipment = GetComponent<PlayerEquipment>();
         AnimManager = GetComponent<PlayerAnimationManager>();
+        inputHandler = GetComponent<InputHandler>();
 
         rb.gravityScale = 0f;
         StateMachine = new PlayerStateMachine();
@@ -52,21 +55,21 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        if (InputHandler.Instance != null)
+        if (inputHandler != null)
         {
-            InputHandler.Instance.OnDash += HandleDash;
-            InputHandler.Instance.OnInteract += HandleInteract;
-            InputHandler.Instance.OnUseModule += HandleUseModule; // ✅
+            inputHandler.OnDash += HandleDash;
+            inputHandler.OnInteract += HandleInteract;
+            inputHandler.OnUseModule += HandleUseModule; // ✅
         }
     }
 
     private void OnDisable()
     {
-        if (InputHandler.Instance != null)
+        if (inputHandler != null)
         {
-            InputHandler.Instance.OnDash -= HandleDash;
-            InputHandler.Instance.OnInteract -= HandleInteract;
-            InputHandler.Instance.OnUseModule -= HandleUseModule;
+            inputHandler.OnDash -= HandleDash;
+            inputHandler.OnInteract -= HandleInteract;
+            inputHandler.OnUseModule -= HandleUseModule;
         }
     }
 
@@ -110,7 +113,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // 3. Normal Omnidirectional Movement
-        Vector2 moveInput = InputHandler.Instance.MoveDirection;
+        Vector2 moveInput = inputHandler.MoveDirection;
         rb.linearVelocity = moveInput * moveSpeed;
 
         // 4. RESTORED: Flip the sprite when moving left/right
@@ -139,7 +142,7 @@ public class PlayerController : MonoBehaviour
             return;
 
         // Prevent dashing in place
-        if (InputHandler.Instance.MoveDirection.sqrMagnitude < 0.01f) return;
+        if (inputHandler.MoveDirection.sqrMagnitude < 0.01f) return;
 
         StateMachine.ChangeState(DashState);
     }
