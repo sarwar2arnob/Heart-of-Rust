@@ -1,71 +1,72 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CraftingSystem : MonoBehaviour
 {
+    [Header("All Game Recipes")]
     public List<RecipeData> recipes;
 
     public event Action<CraftResult> OnCraftSuccess;
 
-    public RecipeData FindMatchingRecipe(List<ItemData> inputs)
+    // Checks if the items in the slots perfectly match any recipe
+    public RecipeData FindMatchingRecipe(List<ItemData> inputtedItems)
     {
         foreach (var recipe in recipes)
         {
-            if (!RecipeManager.Instance.IsUnlocked(recipe))
-                continue;
-
-            if (Matches(recipe, inputs))
+            if (Matches(recipe, inputtedItems))
                 return recipe;
         }
-        return null;
+        return null; // No match found
     }
 
-    private bool Matches(RecipeData recipe, List<ItemData> inputs)
+    // Validates the exact quantities
+    private bool Matches(RecipeData recipe, List<ItemData> inputtedItems)
     {
-        List<ItemData> required = new();
-
-        foreach (var i in recipe.inputs)
+        // 1. Create a dictionary of what the recipe requires
+        Dictionary<ItemData, int> requiredCounts = new Dictionary<ItemData, int>();
+        foreach (var req in recipe.inputs)
         {
-            for (int j = 0; j < i.amount; j++)
-                required.Add(i.item);
+            requiredCounts[req.item] = req.amount;
         }
 
-        if (required.Count != inputs.Count)
-            return false;
-
-        foreach (var input in inputs)
+        // 2. Create a dictionary of what the player put in the slots
+        Dictionary<ItemData, int> inputCounts = new Dictionary<ItemData, int>();
+        foreach (var item in inputtedItems)
         {
-            if (!required.Contains(input))
-                return false;
-
-            required.Remove(input);
+            if (inputCounts.ContainsKey(item))
+                inputCounts[item]++;
+            else
+                inputCounts[item] = 1;
         }
 
-        return required.Count == 0;
+        // 3. Ensure counts match exactly (no missing items, no extra junk items)
+        if (requiredCounts.Count != inputCounts.Count) return false;
+
+        foreach (var kvp in requiredCounts)
+        {
+            if (!inputCounts.ContainsKey(kvp.Key)) return false;
+            if (inputCounts[kvp.Key] != kvp.Value) return false;
+        }
+
+        return true; // Perfect match!
     }
 
-    public bool CanCraft(RecipeData recipe, InventorySystem inventory)
+    // Actually consumes the items and grants the reward
+    public void PerformCraft(RecipeData recipe, InventorySystem inventory)
     {
-        foreach (var item in recipe.inputs)
-        {
-            if (!inventory.Has(item.item, item.amount))
-                return false;
-        }
-        return true;
-    }
-
-    public bool TryCraft(RecipeData recipe, InventorySystem inventory)
-    {
-        if (!CanCraft(recipe, inventory))
-            return false;
-
+        // Remove the items from the real inventory
         foreach (var item in recipe.inputs)
         {
             inventory.Remove(item.item, item.amount);
         }
 
+        // Fire the event to give the player the module/part
         OnCraftSuccess?.Invoke(recipe.result);
-        return true;
+
+        // Optional: Show your popup
+        if (CraftResultPopup.Instance != null)
+            CraftResultPopup.Instance.Show(recipe);
     }
 }

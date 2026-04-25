@@ -148,19 +148,19 @@ public class PlayerController : MonoBehaviour
     }
 
     // ===== SINGLE INTERACTION FLOW =====
+    // Fixed HandleInteract() in PlayerController.cs
     public void HandleInteract()
     {
         // 1. TOGGLE OFF: If currently interacting/crafting, cancel and return to idle
         if (StateMachine.CurrentState == InteractState || StateMachine.CurrentState == CraftingState)
         {
-            StateMachine.ChangeState(IdleState);
-            // NOTE: You will hook your UI closing logic up here later!
-            return;
-        }
+            if (StateMachine.CurrentState == CraftingState)
+            {
+                // Close the UI properly before changing state
+                if (CraftingUI_Slots.Instance != null)
+                    CraftingUI_Slots.Instance.Close();
+            }
 
-        if (StateMachine.CurrentState == CraftingState)
-        {
-            CraftingUI.Instance.Close(); // 🔥 CLOSE UI
             StateMachine.ChangeState(IdleState);
             return;
         }
@@ -169,11 +169,9 @@ public class PlayerController : MonoBehaviour
         if (StateMachine.CurrentState == IdleState || StateMachine.CurrentState == WalkState)
         {
             Collider2D hit = Physics2D.OverlapCircle(transform.position, interactionRadius, interactableLayer);
-
             if (hit != null)
             {
                 IInteractable interactableObject = hit.GetComponent<IInteractable>();
-
                 if (interactableObject != null)
                 {
                     interactableObject.Interact(this);

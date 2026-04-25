@@ -4,95 +4,66 @@ using TMPro;
 
 public class CraftingSlotUI : MonoBehaviour
 {
-    [SerializeField] private Image icon;
+    [Header("Setup in Inspector")]
+    public ItemData itemData; // Assign Scrap, Core, or Wire here in the Inspector
+    [SerializeField] private Image slotImage;
     [SerializeField] private TMP_Text countText;
-    [SerializeField] private Button addButton;
-    [SerializeField] private Button removeButton;
+    [SerializeField] private Button plusButton;
+    [SerializeField] private Button minusButton;
 
-    public ItemData CurrentItem { get; private set; }
-    public int Count { get; private set; }
-
+    public int CurrentCount { get; private set; }
     private InventorySystem inventory;
 
-    public void Setup(InventorySystem inv)
+    private void Start()
+    {
+        plusButton.onClick.AddListener(OnPlus);
+        minusButton.onClick.AddListener(OnMinus);
+        if (itemData != null && slotImage != null)
+        {
+            slotImage.sprite = itemData.icon;
+            slotImage.enabled = true;
+        }
+    }
+
+    public void Init(InventorySystem inv)
     {
         inventory = inv;
-
-        addButton.onClick.RemoveAllListeners();
-        removeButton.onClick.RemoveAllListeners();
-        addButton.onClick.AddListener(OnAdd);
-        removeButton.onClick.AddListener(OnRemove);
-
-        Clear();
+        ResetSlot();
     }
 
-    public void Init()
+    private void OnPlus()
     {
-        Clear();
-    }
+        if (inventory == null) return;
 
-    public void SetItem(ItemData item)
-    {
-        CurrentItem = item;
-        Count = 1;
-        icon.sprite = item.icon;
-        icon.enabled = true;
-        UpdateUI();
-    }
-
-    private void OnAdd()
-    {
-        if (CurrentItem == null)
-            return;
-
-        if (inventory == null)
-            return;
-
-        int owned = inventory.GetCount(CurrentItem);
-
-        if (Count >= owned)
+        // Check if player actually has enough in their inventory to keep adding
+        if (CurrentCount < inventory.GetCount(itemData))
         {
-            Debug.Log($"Not enough {CurrentItem.itemName}");
-
-            if (AudioManager.Instance != null)
-            {
-                AudioManager.Instance.Play(SoundType.CraftFail);
-            }
-
-            return;
+            CurrentCount++;
+            UpdateUI();
         }
-
-        Count++;
-
-        UpdateUI();
-    }
-    private void OnRemove()
-    {
-        if (CurrentItem == null) return;
-
-        Count--;
-
-        if (Count <= 0)
+        else
         {
-            Clear();
-            return;
+            AudioManager.Instance?.Play(SoundType.CraftFail); // Out of items!
         }
+    }
 
+    private void OnMinus()
+    {
+        if (CurrentCount > 0)
+        {
+            CurrentCount--;
+            UpdateUI();
+        }
+    }
+
+    public void ResetSlot()
+    {
+        CurrentCount = 0;
         UpdateUI();
     }
-
-    public void Clear()
-    {
-        CurrentItem = null;
-        Count = 0;
-        icon.enabled = false;
-        countText.text = "";
-    }
-
-    public bool IsEmpty() => CurrentItem == null;
 
     private void UpdateUI()
     {
-        countText.text = Count.ToString();
+        countText.text = CurrentCount.ToString();
     }
 }

@@ -27,10 +27,5 @@ public class InventorySlotUI : MonoBehaviour
 
     private void OnClick()
     {
-        if (CraftingUI_Slots.Instance != null &&
-            CraftingUI_Slots.Instance.gameObject.activeSelf)
-        {
-            CraftingUI_Slots.Instance.AddItemToSlot(currentItem);
-        }
     }
 }

@@ -1,125 +1,154 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class CraftingUI_Slots : MonoBehaviour
 {
-    [SerializeField] private CraftingSlotUI slot1;
-    [SerializeField] private CraftingSlotUI slot2;
-    [SerializeField] private CraftingSlotUI slot3;
-    [SerializeField] private TMP_Text feedbackText;
+    public static CraftingUI_Slots Instance;
+
+    [Header("UI Elements")]
+    [SerializeField] private GameObject panel;
+    [SerializeField] private Button craftButton;
+    [SerializeField] private Button backButton;
+
+    [Header("The Adjusters")]
+    [SerializeField] private CraftingSlotUI[] adjusters; // Drag your 3 slot GameObjects here
 
     private CraftingSystem craftingSystem;
     private InventorySystem inventory;
-    private PlayerEquipment equipment;
-
-    public static CraftingUI_Slots Instance;
+    private PlayerController player;
 
     private void Awake()
     {
         Instance = this;
-        gameObject.SetActive(false);
+        panel.SetActive(false);
     }
 
-    public void Setup(InventorySystem inv)
+    private void Start()
     {
-        inventory = inv;
-        slot1.Setup(inv);
-        slot2.Setup(inv);
-        slot3.Setup(inv);
+        craftButton.onClick.AddListener(TryCraft);
+        backButton.onClick.AddListener(Close);
     }
 
-    public void Open(CraftingSystem system, InventorySystem inv, PlayerEquipment eq)
+    // Called by the Toolbox
+    public void Open(Toolbox toolbox, CraftingSystem cs, InventorySystem inv, PlayerController pc)
     {
-        craftingSystem = system;
+        craftingSystem = cs;
         inventory = inv;
-        equipment = eq;
+        player = pc;
 
-        slot1.Init();
-        slot2.Init();
-        slot3.Init();
+        // Initialize and reset all 3 adjusters to 0
+        foreach (var adjuster in adjusters)
+        {
+            adjuster.Init(inventory);
+        }
 
-        if (feedbackText != null)
-            feedbackText.text = "";
-
-        gameObject.SetActive(true);
+        panel.SetActive(true);
     }
 
     public void Close()
     {
-        gameObject.SetActive(false);
+        panel.SetActive(false);
+        if (player != null)
+        {
+            player.StateMachine.ChangeState(player.IdleState);
+        }
     }
 
-    public void AddItemToSlot(ItemData item)
+    private void TryCraft()
     {
-        if (slot1.IsEmpty()) { slot1.SetItem(item); return; }
-        if (slot2.IsEmpty()) { slot2.SetItem(item); return; }
-        if (slot3.IsEmpty()) { slot3.SetItem(item); return; }
-
-        if (feedbackText != null)
-            feedbackText.text = "Slots full!";
-    }
-
-    public void TryCraft()
-    {
-        List<ItemData> inputs = new();
-
-        Add(slot1, inputs);
-        Add(slot2, inputs);
-        Add(slot3, inputs);
-
-        if (inputs.Count == 0)
+        // 1. Gather what the player dialed in
+        List<ItemAmount> dialedInputs = new List<ItemAmount>();
+        foreach (var adjuster in adjusters)
         {
-            SetFeedback("Insert items!");
-            return;
+            if (adjuster.CurrentCount > 0)
+            {
+                dialedInputs.Add(new ItemAmount { item = adjuster.itemData, amount = adjuster.CurrentCount });
+            }
         }
 
-        RecipeData recipe = craftingSystem.FindMatchingRecipe(inputs);
+        if (dialedInputs.Count == 0) return; // Nothing dialed in
 
-        if (recipe == null)
+        // 2. Check for a match
+        RecipeData matchedRecipe = FindMatchingRecipe(dialedInputs);
+
+        // INSIDE CraftingUI_Slots.cs -> TryCraft()
+
+        if (matchedRecipe != null)
         {
-            SetFeedback("Unknown combination...");
-            return;
-        }
+            Debug.Log($"Crafted: {matchedRecipe.recipeName}");
+            AudioManager.Instance?.Play(SoundType.CraftSuccess);
 
-        if (!craftingSystem.CanCraft(recipe, inventory))
-        {
-            SetFeedback("Not enough materials!");
-            return;
-        }
+            // Remove items from inventory
+            foreach (var input in dialedInputs)
+            {
+                inventory.Remove(input.item, input.amount);
+            }
 
-        bool success = craftingSystem.TryCraft(recipe, inventory);
+            // ✅ NEW: Hand the item directly to the player's equipment!
+            player.equipment.ApplyCraftResult(matchedRecipe.result);
 
-        if (success)
-        {
-            ClearSlots();
-            SetFeedback(""); // clear feedback � popup handles the result display
+            // Trigger popup
+            if (CraftResultPopup.Instance != null) CraftResultPopup.Instance.Show(matchedRecipe);
 
-            // Show the result popup with icon + name
-            CraftResultPopup.Instance?.Show(recipe);
+            // Reset slots back to 0 for the next craft
+            foreach (var adjuster in adjusters) adjuster.ResetSlot();
         }
         else
         {
-            SetFeedback("Craft failed!");
+            Debug.Log("Invalid Recipe!");
+            AudioManager.Instance?.Play(SoundType.CraftFail);
         }
     }
 
-    private void Add(CraftingSlotUI slot, List<ItemData> list)
+    // The logic to check if dialed items perfectly match a recipe
+    private RecipeData FindMatchingRecipe(List<ItemAmount> dialedInputs)
     {
-        for (int i = 0; i < slot.Count; i++)
-            list.Add(slot.CurrentItem);
-    }
+        foreach (var recipe in craftingSystem.recipes)
+        {
+            // 1. Filter out any items in the recipe that have an amount of 0 (safety catch)
+            List<ItemAmount> validRequirements = new List<ItemAmount>();
+            foreach (var req in recipe.inputs)
+            {
+                if (req.amount > 0) validRequirements.Add(req);
+            }
 
-    private void ClearSlots()
-    {
-        slot1.Clear();
-        slot2.Clear();
-        slot3.Clear();
-    }
+            // 2. If the amount of distinct items required doesn't match the dials, skip
+            if (validRequirements.Count != dialedInputs.Count) continue;
 
-    private void SetFeedback(string message)
-    {
-        if (feedbackText != null)
-            feedbackText.text = message;
+            // 3. Bulletproof deep match
+            bool isMatch = true;
+            foreach (var req in validRequirements)
+            {
+                bool foundItemMatch = false;
+                foreach (var dialed in dialedInputs)
+                {
+                    if (dialed.item == req.item && dialed.amount == req.amount)
+                    {
+                        foundItemMatch = true;
+                        break;
+                    }
+                }
+
+                if (!foundItemMatch)
+                {
+                    isMatch = false;
+                    break; // Missing an item or wrong amount
+                }
+            }
+
+            // 4. Final Progression Check!
+            if (isMatch)
+            {
+                if (RecipeManager.Instance != null && !RecipeManager.Instance.IsUnlocked(recipe))
+                {
+                    Debug.LogWarning($"[Crafting] Matched {recipe.recipeName}, but you haven't unlocked this recipe page yet!");
+                    return null;
+                }
+                return recipe; // Perfect match AND unlocked!
+            }
+        }
+
+        return null; // No match found
     }
 }

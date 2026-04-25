@@ -52,15 +52,6 @@ public class PlayerEquipment : MonoBehaviour
         {
             inputHandler.OnSwapModule += CycleModule;
         }
-        else
-        {
-            Debug.LogError("[PlayerEquipment] InputHandler missing!");
-        }
-        if (craftingSystem != null)
-            craftingSystem.OnCraftSuccess += ApplyCraftResult;
-        else
-            Debug.LogError("[PlayerEquipment] CraftingSystem not found!");
-
 
     }
 
@@ -168,11 +159,7 @@ public class PlayerEquipment : MonoBehaviour
         EquipModule(unlockedModules[currentModuleIndex]);
     }
 
-    private void OnDestroy()
-    {
-        if (craftingSystem != null)
-            craftingSystem.OnCraftSuccess -= ApplyCraftResult;
-    }
+  
     // =========================
     // 🧪 DEBUG
     // =========================

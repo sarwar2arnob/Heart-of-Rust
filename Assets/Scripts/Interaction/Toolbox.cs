@@ -12,27 +12,22 @@ public class Toolbox : MonoBehaviour, IInteractable
         craftingSystem = GetComponent<CraftingSystem>();
     }
 
-    void Start()
-    {
-        var inventory = FindAnyObjectByType<InventorySystem>();
-        var ui = FindAnyObjectByType<CraftingUI_Slots>(FindObjectsInactive.Include);
-
-        if (ui != null && inventory != null)
-            ui.Setup(inventory);
-    }
 
     public void Interact(PlayerController player)
     {
-        var inventory = FindAnyObjectByType<InventorySystem>();
-        var ui = FindAnyObjectByType<CraftingUI_Slots>(FindObjectsInactive.Include); // <-- fix
+        var inventory = FindFirstObjectByType<InventorySystem>();
 
-        if (ui == null)
+        // Warn us if the UI is missing or turned off!
+        if (CraftingUI_Slots.Instance == null)
         {
-            Debug.LogError("[Toolbox] CraftingUI_Slots not found in scene!");
-            return;
+            Debug.LogError("[Toolbox] CraftingUI_Slots Instance is NULL! Make sure the GameObject is active in the scene so Awake() can run.");
+            return; // Stop the code here
         }
+
         OnOpenUI.Invoke();
-        ui.Open(craftingSystem, inventory, player.equipment);
+
+        // Pass the required references
+        CraftingUI_Slots.Instance.Open(this, craftingSystem, inventory, player);
         player.StateMachine.ChangeState(player.CraftingState);
     }
 }
