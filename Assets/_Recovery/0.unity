@@ -4528,19 +4528,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5879740875655252774, guid: 9868997777860fa428961663eb5fef1e, type: 3}
       propertyPath: m_Size.x
-      value: 6.136335
+      value: 5.1168947
       objectReference: {fileID: 0}
     - target: {fileID: 5879740875655252774, guid: 9868997777860fa428961663eb5fef1e, type: 3}
       propertyPath: m_Size.y
-      value: 3.7968936
+      value: 3.34834
       objectReference: {fileID: 0}
     - target: {fileID: 5879740875655252774, guid: 9868997777860fa428961663eb5fef1e, type: 3}
       propertyPath: m_Offset.x
-      value: 0.022674322
+      value: -0.01810348
       objectReference: {fileID: 0}
     - target: {fileID: 5879740875655252774, guid: 9868997777860fa428961663eb5fef1e, type: 3}
       propertyPath: m_Offset.y
-      value: -0.096757114
+      value: 0.12751961
       objectReference: {fileID: 0}
     - target: {fileID: 6505420290143795865, guid: 9868997777860fa428961663eb5fef1e, type: 3}
       propertyPath: m_LocalPosition.x
